@@ -1,0 +1,59 @@
+.slowFade {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slowFade .slide img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #000;
+    backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 0;
+    transform: scale(1.5) rotate(15deg);
+    animation: slowFade 24s infinite;
+    animation: slowFade 24s infinite;
+}
+
+.slowFade .slide:nth-child(3) img {
+    animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.slowFade .slide:nth-child(2) img {
+    animation-delay: 8s;
+    animation-delay: 8s;
+}
+
+.slowFade .slide:nth-child(1) img {
+    animation-delay: 16s;
+    animation-delay: 16s;
+}
+
+@keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+@keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+
+    40% {
+        opacity: 0;
+    }
+}

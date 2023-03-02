@@ -2,22 +2,122 @@
   "linklists": {
     "main": [
       {
-        "title": "Home",
-        "url": "/"
+        "title": "私たちについて",
+        "url": "#about"
       },
       {
-        "title": "About",
-        "url": "/about.html"
+        "title": "私たちの仕事",
+        "url": "#work"
       },
       {
-        "title": "Nested 1",
-        "url": "/nested/",
-        "links": [
-          {
-            "title": "Nested 2",
-            "url": "/nested/nested/"
-          }
-        ]
+        "title": "キャリアプラン",
+        "url": "#career"
+      },
+      {
+        "title": "社員インタビュー",
+        "url": "#interview"
+      },
+      {
+        "title": "会社情報",
+        "url": "#company"
+      }
+    ]
+  },
+  "work": {
+    "img": [
+      {
+        "pcUrl": "/assets/img/work/work1.png",
+        "spUrl": "/assets/img/work/work1SP.png"
+      },
+      {
+        "pcUrl": "/assets/img/work/work2.png",
+        "spUrl": "/assets/img/work/work2SP.png"
+      },
+      {
+        "pcUrl": "/assets/img/work/work3.png",
+        "spUrl": "/assets/img/work/work3SP.png"
+      },
+      {
+        "pcUrl": "/assets/img/work/work4.png",
+        "spUrl": "/assets/img/work/work4SP.png"
+      }
+    ],
+    "cate": [
+      {
+        "number": "1",
+        "desc": "重機の運転、土木作業の手元"
+      },
+      {
+        "number": "2",
+        "desc": "ブロック積み、フェンス、カーポート、門扉、照明、ポスト、表札と言われる金物商品の取付工事"
+      },
+      {
+        "number": "3",
+        "desc": "左官作業と言われるコンクリートを扱う工事作業"
+      },
+      {
+        "number": "4",
+        "desc": "電気工事（照明、インターホンの取付）"
+      },
+      {
+        "number": "5",
+        "desc": "設備工事（給水管、排水管の設置）"
+      },
+      {
+        "number": "6",
+        "desc": "植栽工事（新築への植栽の植え付け作業）"
+      },
+      {
+        "number": "7",
+        "desc": "鉄筋の組立て作業"
+      },
+      {
+        "number": "8",
+        "desc": "型枠の設置工事"
+      }
+    ]
+  },
+  "album": {
+    "main": [
+      {
+        "imgPC": "/assets/img/album/img1.png",
+        "imgSP": "/assets/img/album/img1SP.png",
+        "imgModal": "/assets/img/album/img1Modal.jpg"
+      },
+      {
+        "imgPC": "/assets/img/album/img2.png",
+        "imgSP": "/assets/img/album/img2SP.png",
+        "imgModal": "/assets/img/album/img2Modal.jpg"
+      },
+      {
+        "imgPC": "/assets/img/album/img3.png",
+        "imgSP": "/assets/img/album/img3SP.png",
+        "imgModal": "/assets/img/album/img3Modal.jpg"
+      },
+      {
+        "imgPC": "/assets/img/album/img4.png",
+        "imgSP": "/assets/img/album/img4SP.png",
+        "imgModal": "/assets/img/album/img4Modal.jpg"
+      },
+      {
+        "imgPC": "/assets/img/album/img5.png",
+        "imgSP": "/assets/img/album/img5SP.png",
+        "imgModal": "/assets/img/album/img5Modal.jpg"
+      },
+      {
+        "imgPC": "/assets/img/album/img6.png",
+        "imgSP": "/assets/img/album/img6SP.png",
+        "imgModal": "/assets/img/album/img6Modal.jpg"
+      },
+       {
+        "imgPC": "/assets/img/album/img7.png",
+        "imgSP": "/assets/img/album/img7SP.png",
+        "imgModal": "/assets/img/album/img7Modal.jpg"
+      },
+      {
+        "imgPC": "/assets/img/album/img8.png",
+        "imgSP": "/assets/img/album/img8SP.png",
+        "imgModal": "/assets/img/album/img8Modal.jpg"
       }
     ]
   }

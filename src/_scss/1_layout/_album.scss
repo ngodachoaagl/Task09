@@ -1,0 +1,90 @@
+.c-album {
+    margin-top: 89px;
+
+    .c-album__header {
+        text-align: center;
+    }
+
+    .c-title {
+        letter-spacing: 1.82px;
+        margin-bottom: 13px;
+    }
+
+    .c-album__body {
+        width: 880px;
+        margin: 35px auto 0;
+        max-width: 880px;
+        border: 1px solid $cl-blue--1;
+        padding: 39px 40px;
+        display: flex;
+        max-height: 642px;
+    }
+
+    .c-album__video {
+        width: 50%;
+        margin-right: 20px;
+
+        video {
+            min-width: 400px;
+            max-height: 560px;
+            object-fit: cover;
+        }
+    }
+
+    .c-album__imgs {
+        height: fit-content;
+        transform: translateX(1px);
+        width: calc(50% - 20px);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .c-album__img {
+        position: relative;
+        width: calc(50% - 10px);
+        height: fit-content;
+        margin-bottom: 26px;
+
+        &:nth-of-type(2n) {
+            margin-left: 20px;
+        }
+
+        .c-album__overlay {
+            opacity: 0;
+            transition: all 0.5s;
+            background-color: rgba(255, 255, 255, 0.6);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        &:hover .c-album__overlay {
+            opacity: 1;
+        }
+
+        .c-album__pick {
+            font-size: 1.8rem;
+            letter-spacing: 0.43px;
+            font-weight: 500;
+            position: absolute;
+            top: 63%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+
+            &::after {
+                position: absolute;
+                font-family: "Font Awesome 5 Free";
+                content: "\f00e";
+                font-weight: 700;
+                font-size: 2.3rem;
+                color: $cl-blue--1;
+                top: -52%;
+                left: 49.7%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

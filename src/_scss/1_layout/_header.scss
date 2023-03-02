@@ -1,29 +1,67 @@
-/* Header
-------------------------------------------------------------*/
 .c-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.9);
+    background-color: $cl-white--1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
 }
-/* Main menu
-------------------------------------------------------------*/
-.c-gnav {
-    ul {
-    }
 
-    li {
-        display: inline-block;
+.c-header--main {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 21px;
 
-        + li {
-            margin-left: 20px;
+    .c-header__logo {
+        padding: 15px 0 26px;
+
+        margin-right: 94px;
+        position: relative;
+
+        &::after {
+            content: "Recruitment 2020";
+            color: $cl-gray--1;
+            font-size: 1.2rem;
+            position: absolute;
+            bottom: 17%;
+            right: 10%;
         }
     }
 
-    a {
-        font-size: 1.6rem;
-        text-transform: capitalize;
+    .c-header__nav {
+        padding: 35px 0 30px;
+        width: 676px;
+        margin-right: 44px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            color: $cl-blue--1;
+            letter-spacing: 0.32px;
+        }
+    }
+
+    .c-header__left {
+        .c-header--assign {
+            background-color: $cl-blue--1;
+            padding: 14px 40px 15px 39px;
+            border-radius: 9px;
+            white-space: nowrap;
+            color: $cl-white--1;
+        }
+
+        .c-header--Licon {
+            width: 20px;
+            transform: translate(-4px, 5px);
+        }
+
+        .c-header--Ltxt {
+            font-size: 1.8rem;
+            letter-spacing: 2.23px;
+        }
     }
 }

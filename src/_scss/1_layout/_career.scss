@@ -1,0 +1,87 @@
+.c-career {
+    margin-top: 93px;
+
+  
+
+    .c-career__header {
+        text-align: center;
+        margin-bottom: 101px;
+
+        .c-title {
+            margin-bottom: 19px;
+        }
+
+        .c-cap {
+            line-height: 1.73;
+        }
+    }
+
+    .c-career__banner {
+        position: relative;
+    }
+
+    .c-career__bannerText {
+        width: 489px;
+        height: 471px;
+        position: absolute;
+        background-color: $cl-white--1;
+        top: 49%;
+        left: 30.3%;
+        transform: translate(-50%, -50%);
+        padding: 35px 25px 30px 40px;
+
+        .c-title {
+            letter-spacing: 0.62px;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        .c-cap {
+            line-height: 1.85;
+        }
+    }
+
+    .c-career__body {
+        margin-top: 74px;
+
+    }
+
+    .c-career__bodyT {
+        background-color: $cl-gray--2;
+        padding: 93px 65px 93px 120px;
+        width: 921px;
+        margin-right: auto;
+
+        .c-title {
+            letter-spacing: 0.65px;
+        }
+    }
+
+    .c-career__histories {
+        margin-top: 42px;
+        padding-left: 40px;
+    }
+
+    .c-career__histTitle {
+        font-size: 2.5rem;
+        letter-spacing: 0.6px;
+        color: $cl-blue--1;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .c-career__histBox {
+        margin-left: 51px;
+        border-left: 1px solid $cl-blue--1;
+        padding-left: 87px;
+        padding-top: 12px;
+        padding-bottom: 15px;
+    }
+
+    .c-career__histDesc {
+        font-size: 1.6rem;
+        color: $cl-blue--1;
+        letter-spacing: 0.38px;
+        line-height: 1.73;
+    }
+}

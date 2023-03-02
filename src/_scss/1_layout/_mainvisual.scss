@@ -1,0 +1,133 @@
+.c-mainvisual {
+    padding-top: 80px;
+    position: relative;
+    padding-bottom: 0;
+
+    .slowFade {
+        display: flex;
+        align-items: flex-start;
+        background: #fff;
+        height: 770px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slowFade .c-slide img {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        background: #000;
+        backface-visibility: hidden;
+        backface-visibility: hidden;
+        opacity: 0;
+        transform: scale(1.5);
+        animation: slowFade 24s infinite;
+        animation: slowFade 24s infinite;
+    }
+
+    .slowFade .c-slide:nth-child(3) img {
+        animation-delay: 0s;
+        animation-delay: 0s;
+    }
+
+    .slowFade .c-slide:nth-child(2) img {
+        animation-delay: 8s;
+        animation-delay: 8s;
+    }
+
+    .slowFade .c-slide:nth-child(1) img {
+        animation-delay: 16s;
+        animation-delay: 16s;
+    }
+
+    @keyframes slowFade {
+        25% {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        40% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes slowFade {
+        25% {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        40% {
+            opacity: 0;
+        }
+    }
+
+    .c-mainvisual__text {
+        position: absolute;
+        top: 50%;
+        left: 27.9%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        .c-mainvisual_title {
+            font-weight: 500;
+            font-size: 5rem;
+            margin-bottom: 0;
+            letter-spacing: 2.5px;
+            background-color: $cl-blue--1;
+            display: inline-block;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            padding-left: 10px;
+        }
+    }
+
+    .c-mainvisual__scroll {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .c-mainvisual__box {
+        width: 80%;
+        margin: 0 auto;
+        background-color: $cl-white--1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95px;
+        position: relative;
+    }
+
+    .c-mainvisual__desc {
+     
+        font-size: 2.6rem;
+        color: $cl-blue--1;
+        font-weight: 500;
+        letter-spacing: 1.92px;
+        line-height: 0;
+    }
+
+    .c-mainvisual__scrollBtn {
+        font-size: 2rem;
+        letter-spacing: 0.48px;
+        font-weight: 500;
+        position: absolute;
+        top: -42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 30px;
+            background-color: $cl-blue--1;
+            top: 185%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
