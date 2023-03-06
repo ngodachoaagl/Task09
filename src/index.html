@@ -110,8 +110,8 @@
           </div>
           <div class="c-box__R">
             <div class="c-box__Rheader">
-              <div class="c-title u-clBlue">仕事内容の紹介</div>
-              <div class="c-cap">屋外での現場作業をメインに行ないます。</div>
+              <h2 class="c-title u-clBlue">仕事内容の紹介</h2>
+              <h3 class="c-cap">屋外での現場作業をメインに行ないます。</h3>
             </div>
             <div class="c-box__Rbody">
               <% if(typeof work !='undefined' ){%>
@@ -164,11 +164,9 @@
           </div>
         </div>
       </div>
-
-
       <div id="myModal" class="c-modal">
 
-        <!-- Modal content -->
+
         <div class="c-modal__content">
 
           <img class="c-modal__img" src="/assets/img/album/img1.png" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
@@ -204,19 +202,242 @@
           <div class="c-career__bodyT">
             <h2 class="c-title u-clBlue">入社後のキャリアプラン</h2>
             <div class="c-career__histories">
-              <div class="c-career__hist">
-                <h3 class="c-career__histTitle">
-                  入社1年目
-                </h3>
-                <div class="c-career__histBox">
-                  <p class="c-career__histDesc">たくさんの現場を経験し、いろんな先輩社員と接することで、まずは一通りの作業内容と現場作業の流れを把握します。</p>
-                </div>
+              <% if(typeof histories !='undefined' ){ %>
+                <% histories.main.forEach(item=>{%>
+                  <div class="c-career__hist">
+                    <h3 class="c-career__histTitle">
+                      <%= item.histTitle %>
+                    </h3>
+                    <div class="c-career__histBox">
+                      <p class="c-career__histDesc"><%- item.histDesc %></p>
+                    </div>
+                  </div>
+                  <% })%>
+                    <% }%>
+
+
+            </div>
+            <div class="c-career__bodyB">
+              <span class="c-decorLeft"></span>
+              <h2 class="c-title u-clOrange u-fs25">あなたは、どんな未来に向けて<br> どんなキャリアで仕事をしたいですか？</h2>
+              <span class="c-decorRight"></span>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="c-career__footer">
+          <div class="c-box l-container">
+            <div class="c-box__L">
+              <% if(typeof histories !='undefined' ){%>
+                <% histories.image.forEach(item=>{%>
+                  <picture>
+                    <source media="(max-width:767px )" srcset="<%= item.spUrl %>">
+                    <img src="<%= item.pcUrl %>" alt="私たちの仕事">
+                  </picture>
+                  <% })%>
+                    <% }%>
+
+            </div>
+            <div class="c-box__R">
+
+              <div class="c-box__item">
+                <h2 class="c-title u-fs28 u-clOrange">充実した福利厚生サービス</h2>
+                <% if(typeof histories.service !='undefined' ){ %>
+                  <% histories.service.forEach(item=>{%>
+                    <dl>
+                      <dt>
+                        <h3 class="c-box__dt c-box__dtDot"><%- item.dtTxt %></h3>
+                      </dt>
+                      <% if(typeof item.ddTxt !="undefined" ){ %>
+                        <% item.ddTxt.forEach(ddItem=>{%>
+                          <dd>
+                            <h4 class="c-box__dd <%-item.ddClass %>">
+                              <%= ddItem.txt %>
+                            </h4>
+                          </dd>
+                          <% })%>
+                            <% }%>
+
+                    </dl>
+                    <% })%>
+                      <% }%>
+
+
+              </div>
+              <div class="c-box__item">
+                <h2 class="c-title u-fs28 u-clOrange">独立支援制度も充実!20代でも独立可能</h2>
+                <% if(typeof histories.years !='undefined' ){ %>
+                  <% histories.years.forEach(item=>{%>
+                    <dl>
+                      <dt>
+                        <h3 class="c-box__dt c-box__dtDot"><%- item.dtTxt %></h3>
+                      </dt>
+                      <% if(typeof item.ddTxt !="undefined" ){ %>
+                        <% item.ddTxt.forEach(ddItem=>{%>
+                          <dd>
+                            <h4 class="c-box__dd <%-item.ddClass %>">
+                              <%= ddItem.txt %>
+                            </h4>
+                          </dd>
+                          <% })%>
+                            <% }%>
+
+                    </dl>
+                    <% })%>
+                      <% }%>
+
+
+              </div>
+
+
+              <div class="c-box__Rbody">
+
               </div>
             </div>
           </div>
         </div>
       </div>
 
+    </section>
+    <section class="c-interview">
+      <div class="c-interview--main c-scrollBox ">
+        <h2 class="c-title u-fs44 u-clBlue">先輩社員からのメッセージ</h2>
+        <h3 class="c-cap">未経験で入社した多くのメンバーが活躍しています。<br> 各部門で活躍する現役メンバーたちの「リアルな声」をお届けします。</h3>
+        <div class="c-interview--header">
+          <div class="c-flexbox c-flexbox--3row">
+            <% if(typeof interview !='undefined' ){%>
+              <% interview.main.forEach(item=>{%>
+                <div class="c-flexbox__item">
+                  <div class="c-flexbox__border"></div>
+                  <picture>
+                    <source media="(max-width:767px )" srcset="<%= item.spImg %>">
+                    <img class="c-flexbox__img" src="<%= item.pcImg %>" alt="先輩社員からのメッセージ">
+                  </picture>
+
+                  <p class="c-flexbox__desc u-clBlue">
+                    <%= item.desc %>
+                  </p>
+                  <div class="c-flexbox__banner">
+                    <div class="c-flexbox__bannerMain">
+                      <div class="c-flexbox__bannerIcon">
+                        <i class="fa fa-play"></i>
+                      </div>
+                      <div class="c-flexbox__bannerText">
+                        <p class="c-flexbox__bannerName">
+                          <%= item.name %>
+                        </p>
+                        <p class="c-flexbox__bannerDesc">
+                          <%= item.bannerDesc %>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="c-flexbox__overlay">
+                    <div data-target="<%= item.dataTarget %>" class="c-flexbox__overlayC">
+                      <i class="fa fa-search-plus"></i>
+                      <span class="c-flexbox__overlayTxt ">
+                        INTERVIEW
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+                <% })%>
+                  <% }%>
+
+
+          </div>
+        </div>
+        <div class="c-interview--body l-container">
+          <h3 class="c-title u-fs34">代表メッセージ</h3>
+          <div class="c-interview--bodyM">
+            <div class="c-interview--bodyL">
+              <h4 class="c-cap u-fs24">「学歴・経験不問。ポテンシャル重視で採用」</h4>
+              <p class="c-interview__desc">
+                弊社は、｢お客様に喜ばれる仕事をしよう｣という会社理念を掲げて社会貢献事業を行なっています。何か仕事で困った事があってもお客様の立場や、気持ちを考えれば社員一同、同じ方向を向いて仕事が出来ます。
+              </p>
+              <p class="c-interview__desc">
+                また、個人の目標も大切にしており弊社の全てのメンバーが夢、希望をもって仕事に取り組み楽しい職場作りを目指しております。<br>
+                メンバー同士、助け合いの精神をもって規律正しく和気あいあいと作業を行なっています。
+              </p>
+              <p class="c-interview__desc">
+                昔のように職人は誰でもなれる職業ではありません。身体も頭脳も健全でなければ一流の職人にはなれませんが、ENTEXでは多くのまだ若いプロの職人が親切、丁寧に教育しますので安心です。
+              </p>
+            </div>
+            <div class="c-interview--bodyR">
+              <img src="assets/img/interview/messImg1.png" alt="">
+            </div>
+          </div>
+          <h4 class="c-title u-fs24">自分の作品として最低でも50年は施工場所が残る仕事です。<br> 大切な家族や友人に、自分が施工した自慢の作品がすぐに理解できて貰える喜びが、
+            とても嬉しくて遣り甲斐のある仕事です。</h4>
+          <h5 class="c-interview__sign">株式会社ENTEX　代表取締役社長　遠藤 剛</h5>
+          <div class="c-interview--bodyF">
+            
+          </div>
+        </div>
+      </div>
+      <div id="interviewModal" class="c-interviewModal">
+        <div class="c-interviewModal__content">
+          <h4 class="c-title u-clBlue u-fs24">いつも明るく元気に作業。朝も一番に出勤してます！</h4>
+          <div class="c-interviewModal__main">
+            <div class="c-interviewModal__R">
+              <img src="/assets/img/interview/modal/modal1.png" alt="">
+              <div class="c-interviewModal__banner">
+                <p class="c-interviewModal__name">安川　聖 (30)</p>
+                <p class="c-interviewModal__desc">入社2年目・外構担当職人</p>
+              </div>
+            </div>
+            <div class="c-interviewModal__L">
+              <dl class="c-interview__dl">
+                <dt class="c-interview__dt">
+                  <p class="c-interview__dtTxt">Q. 仕事内容について教えてください</p>
+                </dt>
+                <dd class="c-interview__dd">
+                  <p class="c-interview__ddTxt">
+                    外構工事を担当しています。建物を新しく建てる際やお庭のリフォームを検討されてる方をはじめ、カーポート、ウッドデッキ、ブロック塀、門扉、アプローチ　シャッター、フェンス、テラスなど、大小様々な工事を行っています。
+                  </p>
+                </dd>
+              </dl>
+              <dl class="c-interview__dl">
+                <dt class="c-interview__dt">
+                  <p class="c-interview__dtTxt">Q. 入社の決め手について教えてください</p>
+                </dt>
+                <dd class="c-interview__dd">
+                  <p class="c-interview__ddTxt">
+                    もともとは営業や飲食業、アパレル関係の仕事をしていましたが、何か手に職をつけたいと思い、ENTEXに応募しました。
+                  </p>
+                </dd>
+              </dl>
+              <dl class="c-interview__dl">
+                <dt class="c-interview__dt">
+                  <p class="c-interview__dtTxt">Q. 仕事でやりがいを感じるときはどんな時ですか？</p>
+                </dt>
+                <dd class="c-interview__dd">
+                  <p class="c-interview__ddTxt">
+                    入社2年目ということもあり、作業中などはあまり余裕を感じることはありませんが、現場の着工前と完成後を見るとやりがいを感じます。
+                    <br>
+                    また、完成後に自分が携わった現場を通りかかり、そこに住むひとたちが何気ない生活を送っている姿を見るのもやりがいを感じます。私たちの仕事は、世の中に残っていく仕事です。
+                  </p>
+                </dd>
+              </dl>
+              <dl class="c-interview__dl">
+                <dt class="c-interview__dt">
+                  <p class="c-interview__dtTxt">Q. 入社を希望される方に向けてメッセージをお願いします</p>
+                </dt>
+                <dd class="c-interview__dd">
+                  <p class="c-interview__ddTxt">
+                    はっきり言って肉体労働では重いものを運びますし、夏は暑く、冬は寒いです。仕事自体は難しいですが、体力が無くても、不器用でも、信念をもって取り組めばこの仕事は務まると思います。そんな信念のあるひとを私たちはお待ちしています。
+                  </p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <span class="c-closeInterview">&times;閉じる</span>
+
+        </div>
+      </div>
     </section>
 
   </main>

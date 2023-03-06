@@ -1,8 +1,6 @@
 .c-career {
     margin-top: 93px;
 
-  
-
     .c-career__header {
         text-align: center;
         margin-bottom: 101px;
@@ -43,12 +41,11 @@
 
     .c-career__body {
         margin-top: 74px;
-
     }
 
     .c-career__bodyT {
         background-color: $cl-gray--2;
-        padding: 93px 65px 93px 120px;
+        padding: 93px 65px 111px 120px;
         width: 921px;
         margin-right: auto;
 
@@ -60,13 +57,20 @@
     .c-career__histories {
         margin-top: 42px;
         padding-left: 40px;
+        margin-bottom: 43px;
+    }
+
+    .c-career__hist {
+        &:not(:last-of-type) {
+            margin-bottom: 17px;
+        }
     }
 
     .c-career__histTitle {
         font-size: 2.5rem;
         letter-spacing: 0.6px;
         color: $cl-blue--1;
-        font-weight: 500;
+        font-weight: 600;
         margin-bottom: 15px;
     }
 
@@ -83,5 +87,144 @@
         color: $cl-blue--1;
         letter-spacing: 0.38px;
         line-height: 1.73;
+    }
+
+    .c-career__bodyB {
+        padding-left: 93px;
+        position: relative;
+
+        .c-title {
+            text-align: center;
+            letter-spacing: 0.6px;
+            font-weight: 600;
+            transform: translate(-9px, -1px);
+        }
+    }
+
+    .c-career__footer {
+        .c-box__R {
+            padding: 92px 85px 55px 38px;
+            background-color: #fdfbef;
+        }
+
+        .c-title {
+            letter-spacing: 0.67px;
+            margin-bottom: 9px;
+        }
+
+        .c-box__item {
+            margin-bottom: 40px;
+        }
+
+        .c-box__item:nth-of-type(2) {
+            .c-title {
+                margin-bottom: 15px;
+            }
+
+            .c-box__dtDot {
+                margin-bottom: 7px;
+            }
+
+            dd:first-of-type {
+                .c-box__dd {
+                    margin-left: 19px;
+
+                    &::before {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        .c-box__L {
+            picture:first-of-type {
+                img {
+                    width: 100%;
+                    max-height: 236px;
+                }
+            
+            }
+        }
+
+        .c-box__dt,
+        .c-box__dd {
+            color: $cl-gray--1;
+        }
+
+        .c-box__dt {
+            display: inline-block;
+            font-size: 1.8rem;
+            letter-spacing: 0.54px;
+            font-weight: 500;
+            margin-left: 19px;
+            line-height: 1.65;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .c-box__dtDot {
+            &::before {
+                position: absolute;
+                content: "●";
+                left: -12.1px;
+                top: 15px;
+                font-size: 1rem;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .c-box__dd {
+            font-size: 1.6rem;
+            letter-spacing: 0.3px;
+            font-weight: 300;
+            position: relative;
+            margin-left: 35px;
+            line-height: 1.7;
+        }
+
+        .c-box__ddStar {
+            &::before {
+                position: absolute;
+                content: "※";
+                left: -5px;
+                top: 15px;
+                font-weight: 700;
+                font-size: 1.2rem;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .c-box__dd.c-box__ddStar {
+            margin-bottom: 12px;
+        }
+
+        .c-box__ddDot {
+            padding-left: 6px;
+            margin-bottom: 0.7px;
+
+            &::before {
+                position: absolute;
+                content: "・";
+                left: -2px;
+                top: 13px;
+                font-weight: 700;
+                font-size: 1.2rem;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    dl:nth-of-type(2) {
+        .c-box__dtDot {
+            margin-bottom: 4px;
+        }
+    }
+
+    dl:nth-of-type(5) {
+        margin-bottom: 14px;
+
+        .c-box__dtDot {
+            margin-bottom: 10px;
+        }
     }
 }

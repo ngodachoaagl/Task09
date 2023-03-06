@@ -1,0 +1,56 @@
+.c-decorLeft {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: -9px;
+        left: 6px;
+        height: 4px;
+        width: 40.5px;
+        transform: translate(-50%, -50%);
+        background-color: $cl-orange--1;
+        content: "";
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 43.3px;
+        width: 4px;
+        transform: translate(-50%, -50%);
+        background-color: $cl-orange--1;
+        content: "";
+    }
+}
+
+.c-decorRight {
+    display: inline-block;
+    position: relative;
+    right: -95.1%;
+    top: -8px;
+    transform: translate(-50%, -50%);
+
+    &::before {
+        position: absolute;
+        top: 9px;
+        left: 6px;
+        height: 4px;
+        width: 40.5px;
+        transform: translate(-50%, -50%);
+        background-color: $cl-orange--1;
+        content: "";
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 13px;
+        height: 43.3px;
+        width: 4px;
+        transform: translate(-50%, -50%);
+        background-color: $cl-orange--1;
+        content: "";
+    }
+}

@@ -1,0 +1,136 @@
+.c-flexbox {
+    display: flex;
+}
+
+.c-flexbox--3row {
+    .c-flexbox__item {
+        width: 32.7%;
+        position: relative;
+
+        &:not(:last-of-type) {
+            margin-right: 9px;
+        }
+
+        &:hover .c-flexbox__border,
+        &:hover .c-flexbox__desc {
+            border-color: #005384;
+        }
+
+        &:hover .c-flexbox__bannerMain {
+            background-color: #005384;
+
+            .c-flexbox__bannerIcon {
+                color: #005384;
+            }
+        }
+
+        &:hover .c-flexbox__overlay {
+            opacity: 1;
+        }
+    }
+
+    .c-flexbox__border {
+        width: 100%;
+        height: 100%;
+        border: 4px solid $cl-blue--1;
+        transition: all 0.3s;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .c-flexbox__desc {
+        transition: all 0.3s;
+        font-weight: 600;
+        position: absolute;
+        font-size: 1.8rem;
+        line-height: 1.53;
+        letter-spacing: 0.43px;
+        background-color: $cl-white--1;
+        border-right: 4px solid $cl-blue--1;
+        border-left: 4px solid $cl-blue--1;
+        padding: 16px 40px 49px 20px;
+        top: 76%;
+        left: 0;
+    }
+
+    .c-flexbox__banner {
+        position: absolute;
+        top: 92.3%;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    .c-flexbox__bannerMain {
+        transition: all 0.3s;
+        min-width: 100%;
+        min-height: 100%;
+        background-color: $cl-blue--1;
+        display: flex;
+        padding: 14px 21px;
+        align-items: center;
+    }
+
+    .c-flexbox__bannerIcon {
+        background-color: $cl-white--1;
+        color: $cl-blue--1;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 18px;
+        line-height: 0.9;
+
+        i {
+            font-size: 0.6rem;
+            transform: translateX(1px);
+        }
+    }
+
+    .c-flexbox__bannerText {
+    }
+
+    .c-flexbox__bannerName {
+        font-size: 2rem;
+        letter-spacing: 0.48px;
+    }
+
+    .c-flexbox__overlay {
+        opacity: 0;
+        transition: all 0.3s;
+        width: 100%;
+        height: 76%;
+        background-color: rgba(255, 255, 255, 0.74);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-right: 4px solid #005384;
+        border-left: 4px solid #005384;
+        border-top: 4px solid #005384;
+    }
+
+    .c-flexbox__overlayC {
+        cursor: pointer;
+        font-size: 2.4rem;
+        text-align: center;
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        i {
+            color: #005384;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .c-flexbox__overlayTxt {
+        
+            letter-spacing: 0.58px;
+            color: #005384;
+            font-weight: 600;
+        }
+    }
+}

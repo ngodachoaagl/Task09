@@ -109,7 +109,7 @@
         "imgSP": "/assets/img/album/img6SP.png",
         "imgModal": "/assets/img/album/img6Modal.jpg"
       },
-       {
+      {
         "imgPC": "/assets/img/album/img7.png",
         "imgSP": "/assets/img/album/img7SP.png",
         "imgModal": "/assets/img/album/img7Modal.jpg"
@@ -118,6 +118,151 @@
         "imgPC": "/assets/img/album/img8.png",
         "imgSP": "/assets/img/album/img8SP.png",
         "imgModal": "/assets/img/album/img8Modal.jpg"
+      }
+    ]
+  },
+  "histories": {
+    "image": [
+      {
+        "pcUrl": "/assets/img/career/img1.png",
+        "spUrl": "/assets/img/career/img1SP.png"
+      },
+      {
+        "pcUrl": "/assets/img/career/img2.png",
+        "spUrl": "/assets/img/career/img2SP.png"
+      },
+      {
+        "pcUrl": "/assets/img/career/img3.png",
+        "spUrl": "/assets/img/career/img3SP.png"
+      },
+      {
+        "pcUrl": "/assets/img/career/img4.png",
+        "spUrl": "/assets/img/career/img4SP.png"
+      }
+    ],
+    "main": [
+      {
+        "histTitle": "入社1年目",
+        "histDesc": "たくさんの現場を経験し、いろんな先輩社員と接することで、まずは一通りの作業内容と現場作業の流れを把握します。"
+      },
+      {
+        "histTitle": "入社3年目",
+        "histDesc": "1人で現場での作業を徐々に行います。"
+      },
+      {
+        "histTitle": "入社5年目",
+        "histDesc": "職長（現場での管理が出来る人）昇格に向けて必要な研修や資格を取得してもらいます。職長になると、現場でお客様との打合せや材料の注文、品質管理、工事写真管理、原価管理といった管理業務も担います。"
+      },
+      {
+        "histTitle": "入社10年目〜 独立か、管理職か。",
+        "histDesc": "独立を希望する人は、<br> 建築士や施工管理技術者への資格の取得、独立に向けての勉強までサポートします。独立後はENTEXから仕事を受注することも可能です。仕入先の紹介なども行ないますので、安心して独立できます。<br><br> 独立を望まない人は、<br> 管理職となり職人の管理や他社が開催する会議へ参加したり、お客様との 工事打合せの作業内容確認を行います。"
+      }
+    ],
+    "service": [
+      {
+        "dtTxt": "遠方から弊社に入社される人は、ENTEX本社の上に社宅(社員寮)があります。",
+        "ddTxt": [
+          {
+            "txt": "現在は満室のため、近くのワンルームから（自転車通勤圏内）通勤していただきます。"
+          }
+        ],
+        "ddClass": "c-box__ddStar"
+      },
+      {
+        "dtTxt": "年1回社員旅行を開催(参加希望者のみ)",
+        "ddTxt": [
+          {
+            "txt": "社員旅行積立金3,000円（会社が旅費の半分以上を負担）"
+          }
+        ],
+        "ddClass": "c-box__ddStar"
+      },
+      {
+        "dtTxt": "社会保険完備(雇用保険、労災保険、健康保険、厚生年金）"
+      },
+      {
+        "dtTxt": "希望者参加型の食事会(費用は会社負担)"
+      },
+      {
+        "dtTxt": "各種手当も充実",
+        "ddTxt": [
+          {
+            "txt": "皆勤手当：5,000円"
+          },
+          {
+            "txt": "雨天手当：1,000円"
+          },
+          {
+            "txt": "固定休日手当：5日分（賃金単価による）"
+          },
+          {
+            "txt": "資格手当"
+          },
+          {
+            "txt": "残業、休日手当"
+          },
+          {
+            "txt": "技能手当"
+          },
+          {
+            "txt": "通勤手当：月3万円まで"
+          }
+        ],
+        "ddClass": "c-box__ddDot"
+      },
+      {
+        "dtTxt": "昇給あり"
+      },
+      {
+        "dtTxt": "賞与あり（夏・冬 年2回）"
+      }
+    ],
+    "years": [
+      {
+        "dtTxt": "独立支援制度",
+        "ddTxt": [
+          {
+            "txt": "資格取得費用の援助"
+          },
+          {
+            "txt": "座学（法律、行政への対応）の勉強支援"
+          },
+          {
+            "txt": "仕入先の紹介"
+          },
+          {
+            "txt": "顧問税理士、行政書士、弁護士の紹介"
+          }
+        ],
+        "ddClass": "c-box__ddDot"
+      }
+    ]
+  },
+  "interview": {
+    "main": [
+      {
+        "pcImg": "/assets/img/interview/modal1.png",
+        "spImg": "/assets/img/interview/modal1SP.png",
+        "desc": "いつも明るく元気に作業。朝も一番に出勤してます！",
+        "name": "安川　聖 (30)",
+        "bannerDesc": "入社2年目・外構担当職人　",
+        "dataTarget": 1
+      },
+      {
+        "pcImg": "/assets/img/interview/modal2.png",
+        "spImg": "/assets/img/interview/modal2SP.png",
+        "desc": "職長として土木・外構工事の現場管理をしながら作業指示",
+        "name": "福元　和稔 (45)",
+        "bannerDesc": "入社3年目・土木、外構担当職長",
+        "dataTarget": 2
+      },
+      {
+        "pcImg": "/assets/img/interview/modal3.png",
+        "spImg": "/assets/img/interview/modal3SP.png",
+        "desc": "高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ",
+        "name": "工藤　智成(41)",
+        "bannerDesc": "入社23年目・外構部長",
+        "dataTarget": 3
       }
     ]
   }
