@@ -7,15 +7,36 @@
 @import "0_base/reset";
 @import "0_base/mixin";
 
-.sp-only {
+.l-sp--only {
     display: none;
 }
-@include sp {
-    .pc-only {
+
+.l-tablet--only {
+    display: none;
+}
+@include tab {
+    .l-pc--only {
         display: none;
     }
 
-    .sp-only {
+    .l-tablet--only {
+        display: block;
+    }
+
+    .l-sp--only {
+        display: none;
+    }
+}
+@include sp {
+    .l-pc--only {
+        display: none;
+    }
+
+    .l-tablet--only {
+        display: none;
+    }
+
+    .l-sp--only {
         display: block;
     }
 }
@@ -26,7 +47,6 @@
 @import "1_layout/header";
 @import "1_layout/footer";
 @import "1_layout/mainvisual";
-
 @import "1_layout/layout";
 @import "1_layout/scrollEffect";
 @import "1_layout/autoSlider";
@@ -35,6 +55,8 @@
 @import "1_layout/album";
 @import "1_layout/career";
 @import "1_layout/interview";
+@import "1_layout/recruit";
+@import "1_layout/company";
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Component .c-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
@@ -46,10 +68,10 @@
 @import "2_component/06_decor";
 @import "2_component/07_flexbox";
 @import "2_component/08_interviewModal";
+@import "2_component/09_tab";
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Project .p-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
-
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Utility .u-

@@ -24,9 +24,14 @@
     .c-interview--body {
         margin-top: 142px;
         background-color: $cl-blue--1;
-        height: 100vh;
-        padding: 93px 120px 100px;
+
+        padding: 93px 30px 69px;
         color: $cl-white--1;
+
+        .c-interview__exBox {
+            max-width: 960px;
+            margin: 0 auto;
+        }
 
         .c-title {
             text-align: left;
@@ -75,6 +80,73 @@
         font-size: 2.2rem;
         letter-spacing: 0.53px;
         font-weight: 500;
-       
+    }
+
+    .c-interview__company {
+        margin-top: 47px;
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 2.52px;
+    }
+
+    .c-interview--footer {
+        padding: 43px 30px 50px 40px;
+        display: flex;
+    }
+
+    .c-interview__logo {
+        width: 308px;
+        height: 116px;
+        background-color: $cl-white--1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+
+        img {
+            transform: translate(-5px, 1px);
+        }
+    }
+
+    .c-interview--hastag {
+        width: calc(100% - 308px - 50px);
+        padding-left: 17px;
+    }
+
+    .c-interview--hastag1,
+    .c-interview--hastag2,
+    .c-interview--hastag3 {
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    .c-interview--hastag1 {
+    }
+
+    .c-interview--hastagTxt1,
+    .c-interview--hastagTxt2 {
+        font-size: 2.4rem;
+        letter-spacing: 0.58px;
+        line-height: 0.9;
+    }
+
+    .c-interview--hastagTxt1 {
+        width: 26%;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            width: 62px;
+            height: 1px;
+            content: "";
+            background-color: $cl-white--1;
+            right: -9%;
+            top: 57%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .c-interview--hastagTxt2 {
+        transform: translateY(2px);
     }
 }

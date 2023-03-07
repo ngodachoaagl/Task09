@@ -1,0 +1,111 @@
+.c-recruit {
+    margin-top: 91px;
+
+    .c-title {
+        text-align: center;
+        margin-bottom: 7px;
+    }
+
+    .c-cap {
+        text-align: center;
+        line-height: 1.73;
+    }
+
+    .c-recruit--body {
+        max-width: 960px;
+        margin: 56px auto 0;
+    }
+
+    table {
+    }
+
+    tr {
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid #707070;
+        line-height: 1.9;
+
+    }
+
+    th {
+        font-size: 2rem;
+        letter-spacing: 0.48px;
+        font-weight: 600;
+        text-align: left;
+        width: 29%;
+        padding-left: 61px;
+        line-height: 1.6;
+     
+    }
+
+    td {
+        text-align: left;
+        font-size: 1.6rem;
+        letter-spacing: 0.38px;
+        font-weight: 400;
+        width: 70%;
+        padding-right: 33px;
+      
+    }
+
+    .c-table__tr1 {
+        border-bottom: 5px solid $cl-blue--1;
+        padding-bottom: 14px;
+    }
+
+   
+
+    tr:not(.c-table__tr1) {
+        padding-top: 14px;
+        padding-bottom: 13px;
+    }
+
+    .c-tab--btnGroup {
+        display: flex;
+        justify-content: center;
+        margin-top: 41px;
+    }
+
+    .c-tab__btn {
+        width: 353px;
+        border-radius: 9px;
+        background-color: $cl-blue--1;
+        padding: 16.5px 33px;
+        font-size: 2.2rem;
+        letter-spacing: 0.53px;
+        color: $cl-white--1;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .c-tab__btnIcon {
+        height: 30px;
+      
+    }
+
+    .c-tab__btn1 {
+        margin-right: 35px;
+
+        .c-tab__btnIcon {
+            transform: translate(-11px, 2px);
+        }
+
+        .c-tab__btnTxt {
+            transform: translate(-9px, 0);
+        }
+     
+    }
+
+    
+    .c-tab__btn2 {
+        .c-tab__btnIcon {
+            transform: translate(0, 2px);
+        }
+
+        .c-tab__btnTxt {
+            transform: translate(3px, 0);
+        }
+    }
+    
+}

@@ -1,0 +1,44 @@
+<footer class="c-footer">
+    <div class="c-footer--main  l-container">
+        <a href="<%= BASE_URL %>index.html" class="c-footer__logo">
+            <img class="c-footer__logoIMG" src="/assets/img/header/logo.png" alt="ENTEX">
+
+        </a>
+        <div class="c-footer__nav">
+            <ul>
+                <% if (typeof linklists !='undefined' ) { %>
+                    <% linklists.main && linklists.main.forEach(link=> { %>
+                        <li>
+                            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>">
+                                        <%= link.title %>
+                            </a>
+                            <% if (link.links) { %>
+                                <ul>
+                                    <% link.links.forEach(child_link=> { %>
+                                        <li>
+                                            <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%=
+                                                        child_link.url %>"><%= child_link.title %></a>
+                                        </li>
+                                        <% }) %>
+                                </ul>
+                                <% } %>
+                        </li>
+                        <% }) %>
+                            <% } %>
+
+            </ul>
+        </div>
+        <div class="c-footer__left">
+            <a class="c-footer--assign" href="#recruit">
+                <img class="c-footer--Licon" src="/assets/img/header/note.svg" alt="募集要項">
+                <span class="c-footer--Ltxt">募集要項</span>
+            </a>
+        </div>
+    </div>
+    <div class="c-footer__breadcrumb l-container">
+        <a class="c-footer__breadcrumbTxt" target="_blank" href="http://entex.co.jp/">>株式会社ENTEXコーポレートサイト</a>
+    </div>
+    <div class="c-footer__copyright">
+        <a class="c-footer__copyrightTxt" href="#">© 株式会社ENTEX. All rights reserved.</a>
+    </div>
+</footer>

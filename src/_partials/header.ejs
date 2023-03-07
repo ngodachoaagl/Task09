@@ -4,7 +4,7 @@
       <img class="c-header__logoIMG" src="/assets/img/header/logo.png" alt="ENTEX">
 
     </a>
-    <div class="c-header__nav">
+    <div class="c-header__nav l-pc--only">
       <ul>
         <% if (typeof linklists !='undefined' ) { %>
           <% linklists.main && linklists.main.forEach(link=> { %>
@@ -34,5 +34,28 @@
         <span class="c-header--Ltxt">募集要項</span>
       </a>
     </div>
+  </div>
+  <div class="c-header__nav l-tablet--only">
+    <ul>
+      <% if (typeof linklists !='undefined' ) { %>
+        <% linklists.main && linklists.main.forEach(link=> { %>
+          <li>
+            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %>
+            </a>
+            <% if (link.links) { %>
+              <ul>
+                <% link.links.forEach(child_link=> { %>
+                  <li>
+                    <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%=
+                            child_link.title %></a>
+                  </li>
+                  <% }) %>
+              </ul>
+              <% } %>
+          </li>
+          <% }) %>
+            <% } %>
+  
+    </ul>
   </div>
 </header>

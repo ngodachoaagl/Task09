@@ -4,7 +4,7 @@
 
     .c-about--main {
 
-        height: 976px;
+       
         width: 100%;
         display: flex;
     }
@@ -12,6 +12,10 @@
     .c-title {
  
         margin-bottom: 24px;
+        @include tab{
+            font-size: 3rem;
+            letter-spacing: 1.62px;
+        }
 
     }
 
@@ -20,11 +24,14 @@
       
         background-color: $cl-blue--1;
         height: 100%;
-        padding-left: 120px;
+        padding-left: 10.5%;
         padding-top: 112px;
         padding-right: 385px;
-  
-
+        padding-bottom: 175px;
+@include tab{
+    padding-left: 2.3%;
+    padding-top: 85px;
+}
        
     }
 
@@ -32,7 +39,10 @@
         font-weight: 400;
         letter-spacing: 0.38px;
         line-height: 1.73;
-
+@include tab{
+    font-size: 1.4rem;
+    letter-spacing: 0.34px;
+}
         &:not(:last-of-type) {
             margin-bottom: 29px;
         }

@@ -1,0 +1,92 @@
+.c-tab {
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Style the buttons that are used to open the tab content */
+.c-tab .c-tablinks {
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+  
+    transition: 0.3s;
+    display: inline-block;
+    font-size: 2.6rem;
+    letter-spacing: 0.62px;
+
+ 
+    
+}
+
+/* Change background color of buttons on hover */
+.c-tablinks1 {
+    color: $cl-blue--1;
+    border: 1px solid $cl-blue--1;
+    border-bottom: none;
+    border-right: none;
+    padding: 32px 16px 12px;
+    border-radius: 20px 0 0;
+}
+
+.c-tablinks2 {
+    color: $cl-gray--1;
+    border: 1px solid $cl-gray--1;
+    border-bottom: none;
+    border-left: none;
+    padding: 32px 16px 12px;
+    border-radius: 0 20px 0 0;
+}
+
+/* Create an active/current tablink class */
+.c-tab .c-tablinks1.active {
+    background-color: $cl-blue--1;
+    width: 58.1%;
+    color: $cl-white--1;
+    padding: 32px 16px 22px;
+    border-radius: 10px 10px 0 0;
+}
+
+.c-tab .c-tablinks2.active {
+    background-color: $cl-gray--1;
+    width: 58.1%;
+    color: $cl-white--1;
+    padding: 32px 16px 22px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Style the tab content */
+.c-tab--content {
+    display: none;
+    padding: 52px 34px 57px;
+    border: 3px solid $cl-blue--1;
+    background-color: #f2f5f7;
+    color: #0b0b0b;
+}
+
+.c-tab--content {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.c-tab--content.active {
+    display: block;
+}
+
+#tab2 {
+    border-color: $cl-gray--1;
+
+    .c-table__tr1 {
+        border-color: $cl-gray--1;
+    }
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

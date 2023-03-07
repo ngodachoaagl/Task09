@@ -44,7 +44,7 @@ for (let item of btnInterview) {
         let index = data.itvModal.findIndex(item => item.id == dataTarget);
         if (index != -1) {
             let dataItem = data.itvModal[index];
-         
+
             let dlContent = ``;
             for (let i of dataItem.dlList) {
                 let ddContent = ``;
@@ -86,10 +86,10 @@ ${dlContent}
         </div>`
             interViewModal.innerHTML = content;
         }
-        let close =  document.getElementsByClassName("c-closeInterview")[0];
+        let close = document.getElementsByClassName("c-closeInterview")[0];
         close.onclick = function () {
             interViewModal.style.display = "none";
-    
+
         }
 
     })
@@ -108,7 +108,17 @@ window.onclick = function (event) {
         interViewModal.style.display = "none";
     }
 }
-
-
-
-
+function openTab(evt, tabNum) {
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("c-tab--content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("c-tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabNum).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+window.openTab = openTab;

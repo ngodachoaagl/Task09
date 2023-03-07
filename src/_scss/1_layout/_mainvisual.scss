@@ -2,7 +2,9 @@
     padding-top: 80px;
     position: relative;
     padding-bottom: 0;
-
+@include tab{
+    padding-top: 123px;
+}
     .slowFade {
         display: flex;
         align-items: flex-start;
@@ -10,6 +12,9 @@
         height: 770px;
         overflow: hidden;
         position: relative;
+        @include tab{
+             height: 788px;
+        }
     }
 
     .slowFade .c-slide img {
@@ -69,7 +74,9 @@
         left: 27.9%;
         transform: translate(-50%, -50%);
         z-index: 2;
-
+@include tab{
+        top: 53.6%;
+}
         .c-mainvisual_title {
             font-weight: 500;
             font-size: 5rem;
@@ -80,6 +87,12 @@
             margin-bottom: 15px;
             line-height: 1.4;
             padding-left: 10px;
+            @include tab{
+                font-size: 4rem;
+                letter-spacing: 1.76px;
+                    line-height: 1.25;
+                     margin-bottom: 17px;
+            }
         }
     }
 
@@ -99,6 +112,10 @@
         align-items: center;
         height: 95px;
         position: relative;
+        @include tab{
+            height: 66px;
+             width: 90%;
+        }
     }
 
     .c-mainvisual__desc {
@@ -108,6 +125,10 @@
         font-weight: 500;
         letter-spacing: 1.92px;
         line-height: 0;
+        @include tab{
+            font-size: 2.2rem;
+            letter-spacing: 1.63px;
+        }
     }
 
     .c-mainvisual__scrollBtn {
@@ -118,7 +139,10 @@
         top: -42%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+@include tab{
+        top: -74%;
+    left: 51.6%;
+}
         &::after {
             position: absolute;
             content: "";
