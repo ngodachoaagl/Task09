@@ -31,6 +31,9 @@
     right: -95.1%;
     top: -8px;
     transform: translate(-50%, -50%);
+    @include tab {
+        right: -93.7%;
+    }
 
     &::before {
         position: absolute;

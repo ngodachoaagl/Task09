@@ -1,38 +1,78 @@
 .c-work {
     margin-top: 93px;
+    @include tab {
+        margin-top: 53px;
+    }
 
     .c-work__header {
         text-align: center;
         margin-bottom: 59px;
+        @include tab {
+            margin-bottom: 36px;
+        }
     }
 
     .c-title {
         margin-bottom: 8px;
+        @include tab {
+            font-size: 3rem;
+            letter-spacing: 1.62px;
+        }
     }
 
     .c-cap {
         line-height: 1.73;
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.34px;
+        }
     }
 
     .c-box__L {
         img {
             min-width: 400px;
+            @include tab {
+                min-width: 288px;
+            }
+
+         
+        }
+
+        picture {
+            &:not(:first-of-type) {
+                @include tab {
+                    img {
+                        transform: translateY(-9px);
+                    }
+                   
+                }
+            }
         }
     }
 
     .c-box__R {
         background-color: $cl-gray--7;
-        // padding: 8.6% 7.4% 9% 3.7%;
+
         padding: 8.6% 2% 9% 3.7%;
         max-height: 944px;
+        @include tab {
+            padding: 7.2% 2.7% 9%;
+            max-height: 748px;
+        }
     }
 
     .c-box__Rheader {
         margin-bottom: 30px;
+        @include tab {
+            margin-bottom: 18px;
+        }
     }
 
     .c-box__Rheader > .c-title {
         margin-bottom: 7px;
+        @include tab {
+            margin-bottom: 4px;
+        }
     }
 
     .c-box__Rbody {
@@ -45,6 +85,9 @@
 
         &:not(:last-of-type) {
             margin-bottom: 21.3px;
+            @include tab {
+                margin-bottom: 15.5px;
+            }
         }
 
         .c-box__tag {
@@ -62,6 +105,11 @@
             width: 90.4%;
             padding: 14px 20px 13px 19px;
             line-height: 1.55;
+            @include tab {
+                letter-spacing: -1.76px !important;
+                padding: 9px 20px 11px 19px;
+                line-height: 1.3;
+            }
         }
     }
 }

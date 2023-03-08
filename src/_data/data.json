@@ -27,19 +27,23 @@
     "img": [
       {
         "pcUrl": "/assets/img/work/work1.png",
-        "spUrl": "/assets/img/work/work1SP.png"
+        "spUrl": "/assets/img/work/work1SP.png",
+        "tabUrl": "/assets/img/work/work1T.png"
       },
       {
         "pcUrl": "/assets/img/work/work2.png",
-        "spUrl": "/assets/img/work/work2SP.png"
+        "spUrl": "/assets/img/work/work2SP.png",
+        "tabUrl": "/assets/img/work/work2T.png"
       },
       {
         "pcUrl": "/assets/img/work/work3.png",
-        "spUrl": "/assets/img/work/work3SP.png"
+        "spUrl": "/assets/img/work/work3SP.png",
+        "tabUrl": "/assets/img/work/work3T.png"
       },
       {
         "pcUrl": "/assets/img/work/work4.png",
-        "spUrl": "/assets/img/work/work4SP.png"
+        "spUrl": "/assets/img/work/work4SP.png",
+        "tabUrl": "/assets/img/work/work4T.png"
       }
     ],
     "cate": [
@@ -81,41 +85,49 @@
     "main": [
       {
         "imgPC": "/assets/img/album/img1.png",
+        "imgTab": "/assets/img/album/img1T.png",
         "imgSP": "/assets/img/album/img1SP.png",
         "imgModal": "/assets/img/album/img1Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img2.png",
+          "imgTab": "/assets/img/album/img2T.png",
         "imgSP": "/assets/img/album/img2SP.png",
         "imgModal": "/assets/img/album/img2Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img3.png",
+          "imgTab": "/assets/img/album/img3T.png",
         "imgSP": "/assets/img/album/img3SP.png",
         "imgModal": "/assets/img/album/img3Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img4.png",
+          "imgTab": "/assets/img/album/img4T.png",
         "imgSP": "/assets/img/album/img4SP.png",
         "imgModal": "/assets/img/album/img4Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img5.png",
+          "imgTab": "/assets/img/album/img5T.png",
         "imgSP": "/assets/img/album/img5SP.png",
         "imgModal": "/assets/img/album/img5Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img6.png",
+          "imgTab": "/assets/img/album/img6T.png",
         "imgSP": "/assets/img/album/img6SP.png",
         "imgModal": "/assets/img/album/img6Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img7.png",
+          "imgTab": "/assets/img/album/img7T.png",
         "imgSP": "/assets/img/album/img7SP.png",
         "imgModal": "/assets/img/album/img7Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img8.png",
+          "imgTab": "/assets/img/album/img8T.png",
         "imgSP": "/assets/img/album/img8SP.png",
         "imgModal": "/assets/img/album/img8Modal.jpg"
       }
@@ -125,18 +137,22 @@
     "image": [
       {
         "pcUrl": "/assets/img/career/img1.png",
+        "tabUrl":"/assets/img/career/img1T.png",
         "spUrl": "/assets/img/career/img1SP.png"
       },
       {
         "pcUrl": "/assets/img/career/img2.png",
+          "tabUrl": "/assets/img/career/img2T.png",
         "spUrl": "/assets/img/career/img2SP.png"
       },
       {
         "pcUrl": "/assets/img/career/img3.png",
+          "tabUrl": "/assets/img/career/img3T.png",
         "spUrl": "/assets/img/career/img3SP.png"
       },
       {
         "pcUrl": "/assets/img/career/img4.png",
+          "tabUrl": "/assets/img/career/img4T.png",
         "spUrl": "/assets/img/career/img4SP.png"
       }
     ],
@@ -169,7 +185,7 @@
         "ddClass": "c-box__ddStar"
       },
       {
-        "dtTxt": "年1回社員旅行を開催(参加希望者のみ)",
+        "dtTxt": "年1回社員旅行を開催<span>(参加希望者のみ)</span>",
         "ddTxt": [
           {
             "txt": "社員旅行積立金3,000円（会社が旅費の半分以上を負担）"
@@ -178,10 +194,10 @@
         "ddClass": "c-box__ddStar"
       },
       {
-        "dtTxt": "社会保険完備(雇用保険、労災保険、健康保険、厚生年金）"
+        "dtTxt": "社会保険完備<span>(雇用保険、労災保険、健康保険、厚生年金）</span>"
       },
       {
-        "dtTxt": "希望者参加型の食事会(費用は会社負担)"
+        "dtTxt": "希望者参加型の食事会<span>(費用は会社負担)</span>"
       },
       {
         "dtTxt": "各種手当も充実",
@@ -221,9 +237,7 @@
       {
         "dtTxt": "独立支援制度",
         "ddTxt": [
-          {
-            "txt": "資格取得費用の援助"
-          },
+         
           {
             "txt": "座学（法律、行政への対応）の勉強支援"
           },
@@ -242,26 +256,37 @@
     "main": [
       {
         "pcImg": "/assets/img/interview/modal1.png",
+        "tabImg": "/assets/img/interview/modal1T.png",
         "spImg": "/assets/img/interview/modal1SP.png",
         "desc": "いつも明るく元気に作業。朝も一番に出勤してます！",
         "name": "安川　聖 (30)",
+        "nameTab": "鈴木太郎",
+        "bannerDescTab":"入社3年目・外構担当",
         "bannerDesc": "入社2年目・外構担当職人　",
         "dataTarget": 1
       },
       {
         "pcImg": "/assets/img/interview/modal2.png",
+        
+      "tabImg": "/assets/img/interview/modal2T.png",
+      
         "spImg": "/assets/img/interview/modal2SP.png",
         "desc": "職長として土木・外構工事の現場管理をしながら作業指示",
+          "nameTab": "池田純一",
+          "bannerDescTab": "入社5年目・外構担当",
         "name": "福元　和稔 (45)",
         "bannerDesc": "入社3年目・土木、外構担当職長",
         "dataTarget": 2
       },
       {
         "pcImg": "/assets/img/interview/modal3.png",
+        "tabImg": "/assets/img/interview/modal3T.png",
         "spImg": "/assets/img/interview/modal3SP.png",
         "desc": "高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ",
         "name": "工藤　智成(41)",
         "bannerDesc": "入社23年目・外構部長",
+          "nameTab": "鈴木太郎",
+          "bannerDescTab": "入社3年目・外構担当",
         "dataTarget": 3
       }
     ]

@@ -1,5 +1,14 @@
 .c-recruit {
     margin-top: 91px;
+    @include tab {
+        margin-top: 51px;
+    }
+
+    .c-recruit--main {
+        @include tab {
+            padding: 0 20px;
+        }
+    }
 
     .c-title {
         text-align: center;
@@ -14,6 +23,9 @@
     .c-recruit--body {
         max-width: 960px;
         margin: 56px auto 0;
+        @include tab {
+            margin: 32px auto 0;
+        }
     }
 
     table {
@@ -35,6 +47,13 @@
         width: 29%;
         padding-left: 61px;
         line-height: 1.6;
+        @include tab {
+            font-size: 1.6rem;
+            letter-spacing: 0.38px;
+            padding-left: 20px;
+            line-height: 1.9;
+            width: 25.4%;
+        }
      
     }
 
@@ -45,19 +64,57 @@
         font-weight: 400;
         width: 70%;
         padding-right: 33px;
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.34px;
+            line-height: 2.1;
+            width: 73%;
+            padding-right: 10px;
+        }
       
     }
 
     .c-table__tr1 {
         border-bottom: 5px solid $cl-blue--1;
         padding-bottom: 14px;
+       
     }
+    
+
 
    
 
     tr:not(.c-table__tr1) {
         padding-top: 14px;
         padding-bottom: 13px;
+        @include tab {
+            padding-bottom: 15px;
+        }
+    }
+
+    tr.c-table__tr5 {
+        @include tab {
+            padding-bottom: 12px;
+        }
+ 
+      
+       
+    }
+
+    tr.c-table__tr6 {
+        @include tab {
+            padding-bottom: 8px;
+        }
+    }
+ 
+
+   
+
+    tr:not(.c-table__tr1,.c-table__tr2,.c-table__tr3,.c-table__tr4,.c-table__tr5,.c-table__tr6) {
+        @include tab {
+            padding-bottom: 14.2px; 
+        }
+   
     }
 
     .c-tab--btnGroup {
@@ -76,19 +133,34 @@
         color: $cl-white--1;
         display: flex;
         justify-content: space-around;
+        @include tab {
+            font-size: 2rem;
+            letter-spacing: 0.48px;
+            width: 301px;
+            padding: 12px 14px;
+        }
         
     }
 
     .c-tab__btnIcon {
         height: 30px;
+        @include tab {
+            height: 26px;
+        }
       
     }
 
     .c-tab__btn1 {
         margin-right: 35px;
+        @include tab {
+            margin-right: 20px;
+        }
 
         .c-tab__btnIcon {
             transform: translate(-11px, 2px);
+            @include tab {
+                transform: translate(2px, 2px);
+            }
         }
 
         .c-tab__btnTxt {
@@ -101,10 +173,16 @@
     .c-tab__btn2 {
         .c-tab__btnIcon {
             transform: translate(0, 2px);
+            @include tab {
+                transform: translate(-1px, 2px);
+            }
         }
 
         .c-tab__btnTxt {
             transform: translate(3px, 0);
+            @include tab {
+                transform: translate(-3px, 0);
+            }
         }
     }
     

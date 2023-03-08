@@ -1,5 +1,8 @@
 .c-album {
     margin-top: 89px;
+    @include tab {
+        margin-top: 43px;
+    }
 
     .c-album__header {
         text-align: center;
@@ -8,6 +11,9 @@
     .c-title {
         letter-spacing: 1.82px;
         margin-bottom: 13px;
+        @include tab {
+            margin-bottom: 7px;
+        }
     }
 
     .c-album__body {
@@ -18,16 +24,30 @@
         padding: 39px 40px;
         display: flex;
         max-height: 642px;
+        @include tab {
+            width: unset;
+            max-width: 730px;
+            margin: 36px auto 0;
+            padding: 19px 20px 13px;
+        }
     }
 
     .c-album__video {
         width: 50%;
         margin-right: 20px;
+        @include tab {
+            margin-right: 18px;
+        }
 
         video {
             min-width: 400px;
             max-height: 560px;
             object-fit: cover;
+            @include tab {
+                min-width: 343px;
+                max-width: 343px;
+                max-height: 462px;
+            }
         }
     }
 
@@ -37,6 +57,10 @@
         width: calc(50% - 20px);
         display: flex;
         flex-wrap: wrap;
+        @include tab {
+            height: unset;
+            max-height: 462px;
+        }
     }
 
     .c-album__img {
@@ -44,6 +68,9 @@
         width: calc(50% - 10px);
         height: fit-content;
         margin-bottom: 26px;
+        @include tab {
+            margin-bottom: 22px;
+        }
 
         &:nth-of-type(2n) {
             margin-left: 20px;

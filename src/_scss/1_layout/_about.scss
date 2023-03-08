@@ -12,9 +12,10 @@
     .c-title {
  
         margin-bottom: 24px;
-        @include tab{
+        @include tab {
             font-size: 3rem;
             letter-spacing: 1.62px;
+            margin-bottom: 11px;
         }
 
     }
@@ -24,27 +25,44 @@
       
         background-color: $cl-blue--1;
         height: 100%;
-        padding-left: 10.5%;
+        padding-left: 50px;
         padding-top: 112px;
         padding-right: 385px;
         padding-bottom: 175px;
-@include tab{
-    padding-left: 2.3%;
-    padding-top: 85px;
-}
+        @include tab {
+            padding-left: 2.3%;
+            padding-top: 85px;
+            padding-right: 250px;
+            width: 94.4%;
+            padding-bottom: 98px;
+        }
        
+    }
+
+    .c-about--Lexbox {
+        max-width: 416px;
+        margin-left: auto;
+        @include tab {
+            margin-left: unset;
+            margin-right: auto;
+            max-width: 400px;
+        }
     }
 
     .c-about__desc {
         font-weight: 400;
         letter-spacing: 0.38px;
         line-height: 1.73;
-@include tab{
-    font-size: 1.4rem;
-    letter-spacing: 0.34px;
-}
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.54px;
+        }
+
         &:not(:last-of-type) {
             margin-bottom: 29px;
+            @include tab {
+                margin-bottom: 28px;
+            }
         }
     }
 
@@ -52,6 +70,9 @@
         padding-top: 119px;
         width: 19.2%;
         padding-right: 16px;
+        @include tab {
+            width: 5.6%;
+        }
       
     }
 
@@ -61,23 +82,46 @@
 
     .c-about__imgs {
         position: absolute;
-        top: 0;
+        top: 2px;
         right: 0;
+        @include tab {
+            top: -41px;
+            right: -43px;
+        }
 
         img {
             min-width: 540px;
+            @include tab {
+                min-width: 309px;
+            }
         }
     }
 
     .c-about__imgBox {
-        border: 2px solid $cl-white--1;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            width: 99.3%;
+            height: 100%;
+            content: "";
+            border: 2px solid $cl-white--1;
+            top: -2px;
+            left: -4px;
+        }
 
         &:not(:last-of-type) {
-            margin-bottom: 40px;
+            margin-bottom: 44px;
+            @include tab {
+                margin-bottom: 41px;
+            }
         }
 
         .c-about__img {
             transform: translate(3.2%, -6%);
+            @include tab {
+                transform: translate(4.2%, -6%);
+            }
         }
     }
 }
