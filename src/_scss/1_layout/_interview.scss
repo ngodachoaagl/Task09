@@ -3,6 +3,9 @@
     @include tab {
         margin-top: 51px;
     }
+    @include sp {
+        margin-top: 36px;
+    }
 
     .c-interview--main {
         .c-title,
@@ -17,6 +20,11 @@
                 letter-spacing: 1.62px;
                 margin-bottom: 7px;
             }
+            @include sp {
+                font-size: 2.4rem !important;
+                letter-spacing: 1.3px;
+                margin-bottom: 10px;
+            }
         }
 
         .c-cap {
@@ -25,6 +33,9 @@
                 font-size: 1.4rem;
                 letter-spacing: 0.34px;
                 line-height: 1.8;
+            }
+            @include sp {
+                line-height: 1.57;
             }
         }
     }
@@ -37,6 +48,10 @@
             margin: 32px auto 0;
             padding: 0 20px;
         }
+        @include sp {
+            max-width: 375px;
+            margin: 35px auto 0;
+        }
     }
 
     .c-interview--body {
@@ -48,6 +63,10 @@
         @include tab {
             margin-top: 109px;
             padding: 52px 20px 40px;
+        }
+        @include sp {
+            margin-top: 19px;
+            padding: 55px 20px 40px;
         }
 
         .c-interview__exBox {
@@ -62,6 +81,11 @@
                 font-size: 3.4rem !important;
                 letter-spacing: 2.52px;
                 margin-bottom: 22px;
+            }
+            @include sp {
+                font-size: 2.4rem !important;
+                letter-spacing: 1.3px;
+                line-height: 1.25;
             }
         }
 
@@ -93,12 +117,18 @@
         @include tab {
             margin-bottom: 16px;
         }
+        @include sp {
+            display: block;
+        }
     }
 
     .c-interview--bodyL {
         width: 66%;
         @include tab {
             width: 64.1%;
+        }
+        @include sp {
+            width: 100%;
         }
     }
 
@@ -112,7 +142,6 @@
             @include tab {
                 letter-spacing: 0.98px;
                 margin-bottom: 27px;
-               
             }
         }
 
@@ -156,7 +185,7 @@
         display: flex;
         @include tab {
             padding: 0;
-          
+
             max-width: 768px;
             margin: 24px auto 0;
         }
@@ -171,7 +200,6 @@
         align-items: center;
         margin-right: 50px;
         @include tab {
-    
             width: 247px;
             height: 102px;
             margin-right: 41px;
@@ -237,8 +265,7 @@
             transform: translate(-50%, -50%);
             @include tab {
                 width: 41px;
-    
-    
+
                 right: 3%;
                 top: 70.5%;
             }

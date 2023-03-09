@@ -16,14 +16,24 @@
             justify-content: space-between;
             height: unset;
         }
+        @include sp {
+            padding: 0 10px;
+           
+        }
 
         .c-header__logo {
             padding: 15px 0 26px;
+
+            margin-right: 8.1%;
+            position: relative;
             @include tab {
                 padding: 20px 0 26px;
             }
-            margin-right: 8.1%;
-            position: relative;
+            @include sp {
+                width: 123px;
+                padding: 14px 0 26px;
+                margin-right: 10px;
+            }
 
             &::after {
                 content: "Recruitment 2020";
@@ -32,6 +42,12 @@
                 position: absolute;
                 bottom: 17%;
                 right: 10%;
+                @include sp {
+                    font-size: 1rem;
+                    letter-spacing: 0.1px;
+                    bottom: 21%;
+                    right: 8%;
+                }
             }
         }
 
@@ -59,6 +75,10 @@
             @include tab {
                 transform: translateY(-3px);
             }
+            @include sp {
+                display: flex;
+           
+            }
 
             .c-header--assign {
                 background-color: $cl-blue--1;
@@ -68,7 +88,11 @@
                 color: $cl-white--1;
                 @include tab {
                     padding: 9px 28px 10px 33px;
-                    
+                }
+                @include sp {
+                    margin-top: 3px;
+                    padding: 7px 13px 7px 22px;
+                    height: fit-content;
                 }
             }
 
@@ -86,14 +110,26 @@
                 @include tab {
                     font-size: 1.6rem;
                     letter-spacing: 1.98px;
+                    @include sp {
+                        font-size: 1.4rem;
+                        letter-spacing: 1.74px;
+                    }
                 }
+            }
+        }
+        @include sp {
+            .c-header__bar {
+                min-width: 30px;
+                color: $cl-blue--1;
+                margin-top: 12px;
+                margin-left: 20px;
+                
             }
         }
     }
 
     .l-tablet--only {
         ul {
-          
             display: flex;
             padding: 7px 40px;
             justify-content: space-between;

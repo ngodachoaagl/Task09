@@ -1,0 +1,293 @@
+
+.c-career__servicetitletop {
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    margin-top: 92px;
+    margin-bottom: 8px;
+    color: $cl-orange--1;
+    @include tab {
+        letter-spacing: 0;
+        margin-top: 60px;
+        margin-bottom: 3px;
+    }
+    @include sp {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+}
+
+.c-career__servicetitlebottom {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: $cl-orange--1;
+    margin-top: 54px;
+    letter-spacing: 0.6px;
+    margin-bottom: 14px;
+    @include tab {
+        margin-top: 50px;
+        margin-bottom: 7px;
+    }
+    @include sp {
+        font-size: 2.2rem;
+        margin-top: 26px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+}
+
+.c-career__servicedescriptionitemtitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $cl-gray--1;
+    letter-spacing: 0.6px;
+    line-height: 1.66;
+    padding-left: 16px;
+    position: relative;
+    @include sp {
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding-left: 15px;
+        letter-spacing: 0;
+    }
+}
+
+.c-career__servicedescriptionitemsubtitle {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $cl-gray--1;
+    padding-left: 20px;
+    @include tab {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    @include sp {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+.c-career__servicedescription {
+    margin-left: 40px;
+
+    dt {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $cl-gray--1;
+        letter-spacing: 0.6px;
+        line-height: 1.66;
+        padding-left: 16px;
+        position: relative;
+        @include sp {
+            font-size: 1.6rem;
+            font-weight: 600;
+            padding-left: 15px;
+        }
+    }
+
+    dd {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: $cl-gray--1;
+        padding-left: 20px;
+        @include tab {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+        @include sp {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+    @include tab {
+        width: 60.5%;
+        // transform: translateX(-20px);
+
+        dt {
+        }
+
+        dd {
+            padding-left: 23px;
+        }
+    }
+    @include sp {
+        margin-left: 9px;
+
+        dt {
+            letter-spacing: 0;
+        }
+
+        dd {
+            padding-left: 9px;
+        }
+    }
+}
+
+.c-career__dot {
+    font-size: 1rem;
+    padding-right: 6px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    @include sp {
+        font-size: 0.9rem;
+        top: 7px;
+    }
+}
+
+.c-career__dot2 {
+    font-size: 1.3rem;
+    @include sp {
+        font-size: 1rem;
+    }
+}
+
+.c-career__dt1 {
+    @include tab {
+        letter-spacing: -1.4px !important;
+    }
+}
+
+.c-career__dd1 {
+    margin-bottom: 14px;
+    margin-top: 14px;
+    letter-spacing: 0.3px;
+    line-height: 1.67;
+    @include tab {
+        margin-top: 9px;
+        margin-bottom: 11px;
+    }
+    @include sp {
+        letter-spacing: 0.1px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+}
+
+.c-career__dd2 {
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+    margin-bottom: 13px;
+    @include tab {
+        margin-top: 10px;
+    }
+    @include sp {
+        margin-top: 1px;
+        margin-bottom: 38px;
+        padding-left: 17px !important;
+        letter-spacing: 0.4px;
+    }
+}
+
+.c-career__dt3 {
+    margin-bottom: 10px;
+    @include tab {
+        margin-bottom: 8px;
+    }
+    @include sp {
+        margin-bottom: 4px;
+    }
+}
+
+.c-career__dt4 {
+    margin-bottom: 12px;
+    @include tab {
+        margin-bottom: 9px;
+    }
+    @include sp {
+        margin-bottom: 8px;
+    }
+}
+
+.c-career__dt5 {
+    margin-bottom: 12px;
+    @include tab {
+        margin-bottom: 10px;
+    }
+    @include sp {
+        margin-bottom: 12px;
+    }
+}
+
+.c-career__dt6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @include tab {
+        margin-top: 8px;
+        letter-spacing: -0.7px !important;
+    }
+    @include sp {
+        margin-top: 7px;
+        margin-bottom: 11px;
+    }
+}
+
+.c-career__bracket {
+    font-size: 1.6rem;
+    font-weight: 300;
+    @include tab {
+        font-size: 1.6rem;
+        letter-spacing: -1px;
+    }
+    @include sp {
+        font-size: 1.4rem;
+    }
+}
+
+.c-career__bracket2 {
+    font-size: 1.6rem;
+    letter-spacing: -1px;
+    font-weight: 300;
+    @include tab {
+        font-size: 1.4rem;
+        letter-spacing: -1px;
+    }
+    @include sp {
+        font-size: 1.4rem;
+    }
+}
+
+.c-career__bracket3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    @include tab {
+        font-size: 1.6rem;
+        letter-spacing: -1px;
+    }
+    @include sp {
+        font-size: 1.4rem;
+    }
+}
+
+.c-career__ddsmall {
+    padding-left: 23px !important;
+    padding-bottom: 4px;
+    letter-spacing: 0.4px;
+    @include tab {
+        padding-left: 19px !important;
+        letter-spacing: -0.6px;
+    }
+    @include sp {
+        padding-left: 11px !important;
+        padding-bottom: 4px;
+        letter-spacing: 0.3px;
+        font-size: 1.4rem;
+    }
+}
+
+.c-career__ddnodot {
+    margin-top: 11px;
+    padding-left: 22px !important;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+    @include tab {
+        margin-top: 10px;
+        padding-left: 24px !important;
+        letter-spacing: 2.1px;
+        margin-bottom: 8px;
+    }
+}
+
+

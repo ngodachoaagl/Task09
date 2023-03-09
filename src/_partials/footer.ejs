@@ -4,7 +4,7 @@
             <img class="c-footer__logoIMG" src="/assets/img/header/logo.png" alt="ENTEX">
 
         </a>
-        <div class="c-footer__nav">
+        <div class="c-footer__nav l-pc--only">
             <ul>
                 <% if (typeof linklists !='undefined' ) { %>
                     <% linklists.main && linklists.main.forEach(link=> { %>
@@ -34,6 +34,30 @@
                 <span class="c-footer--Ltxt">募集要項</span>
             </a>
         </div>
+    </div>
+    <div class="c-footer__nav l-tablet--only">
+        <ul>
+            <% if (typeof linklists !='undefined' ) { %>
+                <% linklists.main && linklists.main.forEach(link=> { %>
+                    <li>
+                        <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%=
+                                        link.title %>
+                        </a>
+                        <% if (link.links) { %>
+                            <ul>
+                                <% link.links.forEach(child_link=> { %>
+                                    <li>
+                                        <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url
+                                                    %>"><%= child_link.title %></a>
+                                    </li>
+                                    <% }) %>
+                            </ul>
+                            <% } %>
+                    </li>
+                    <% }) %>
+                        <% } %>
+    
+        </ul>
     </div>
     <div class="c-footer__breadcrumb l-container">
         <a class="c-footer__breadcrumbTxt" target="_blank" href="http://entex.co.jp/">>株式会社ENTEXコーポレートサイト</a>

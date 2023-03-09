@@ -11,22 +11,24 @@
         <div class="c-slides slowFade">
           <div class="c-slide">
             <picture>
+              <source media="(max-width:767px )" srcset="/assets/img/slider/SP/slider1SP.jpg" />
               <source media="(max-width:1024px )" srcset="/assets/img/slider/tablet/slider1Tab.png" />
-              <source media="(max-width:767px )" srcset="/assets/img/slider/slider1SP.png" />
               <img src="/assets/img/slider/slider1.png" alt="slider1" />
             </picture>
           </div>
           <div class="c-slide">
             <picture>
+              <source media="(max-width:767px )" srcset="/assets/img/slider/SP/slider1SP.png" />
               <source media="(max-width:1024px )" srcset="/assets/img/slider/tablet/slider1Tab.png" />
-              <source media="(max-width:767px)" srcset="/assets/img/slider/slider2SP.png" />
+
               <img src="/assets/img/slider/slider2.png" alt="slider2" />
             </picture>
           </div>
           <div class="c-slide">
             <picture>
+              <source media="(max-width:767px )" srcset="/assets/img/slider/SP/slider1SP.png" />
               <source media="(max-width:1024px )" srcset="/assets/img/slider/tablet/slider1Tab.png" />
-              <source media="(max-width:767px)" srcset="/assets/img/slider/slider3SP.png" />
+
               <img src="/assets/img/slider/slider3.png" alt="slider3" />
             </picture>
           </div>
@@ -45,6 +47,7 @@
             <h3 class="c-mainvisual__desc">
               <span class="u-clOrange">暮らしの未来</span>を一緒に作る仲間を募集しています。
             </h3>
+
           </div>
         </div>
       </a>
@@ -79,15 +82,17 @@
             <div class="c-about__imgs">
               <div class="c-about__imgBox">
                 <picture>
-                  <source media="(max-width: 1024px)" srcset="/assets/img/about/about1T.png" />
+
                   <source media="(max-width: 767px)" srcset="/assets/img/about/about1SP.png" />
+                  <source media="(max-width: 1024px)" srcset="/assets/img/about/about1T.png" />
                   <img class="c-about__img" src="/assets/img/about/about1.png" alt="私たちについて" />
                 </picture>
               </div>
               <div class="c-about__imgBox">
                 <picture>
-                  <source media="(max-width: 1024px)" srcset="/assets/img/about/about2T.png" />
+
                   <source media="(max-width: 767px)" srcset="/assets/img/about/about2SP.png" />
+                  <source media="(max-width: 1024px)" srcset="/assets/img/about/about2T.png" />
                   <img class="c-about__img" src="/assets/img/about/about2.png" alt="私たちについて" />
                 </picture>
               </div>
@@ -101,8 +106,8 @@
         <div class="c-work__header">
           <h2 class="c-title u-clBlue">私たちの仕事</h2>
           <h3 class="c-cap">
-            エクステリアのプロ集団と言っても、仕事内容はさまざまです。<br />
-            仕事をしていく上で、「あなたの興味のあること」「向いていること」が見つけられるかもしれません。
+            エクステリアのプロ集団と言っても、<br class="u-tablet--hidden">仕事内容はさまざまです。<br />
+            仕事をしていく上で、「あなたの興味のあること」<br class="u-tablet--hidden">「向いていること」が見つけられるかもしれません。
           </h3>
         </div>
         <div class="c-box l-container">
@@ -110,8 +115,9 @@
             <% if(typeof work !='undefined' ){%>
               <% work.img.forEach(item=>{%>
                 <picture>
-                  <source media="(max-width:1024px )" srcset="<%= item.tabUrl %>" />
+
                   <source media="(max-width:767px )" srcset="<%= item.spUrl %>" />
+                  <source media="(max-width:1024px )" srcset="<%= item.tabUrl %>" />
                   <img src="<%= item.pcUrl %>" alt="私たちの仕事" />
                 </picture>
                 <% })%>
@@ -145,7 +151,7 @@
         <div class="c-album__header">
           <div class="c-title u-clBlue">Photos & Movie</div>
           <div class="c-cap">
-            私たちの仕事内容の一部を動画と写真でお伝えします。
+            私たちの仕事内容の一部を<br class="u-tablet--hidden">動画と写真でお伝えします。
           </div>
         </div>
         <div class="c-album__body">
@@ -157,8 +163,9 @@
               <% album.main.forEach(item=> {%>
                 <div class="c-album__img">
                   <picture>
-                    <source media="(max-width:1024px )" srcset="<%= item.imgTab %>" />
                     <source media="(max-width:767px )" srcset="<%= item.imgSP %>" />
+                    <source media="(max-width:1024px )" srcset="<%= item.imgTab %>" />
+
                     <img src="<%= item.imgPC %>" alt="私たちの仕事内容の一部を動画と写真でお伝えします。" />
                   </picture>
                   <div class="c-album__overlay">
@@ -185,7 +192,7 @@
         <div class="c-career__header">
           <h2 class="c-title u-clBlue">
             もうすぐ創業50年、<br />
-            あなたのキャリアプランもしっかり考えています。
+            あなたのキャリアプランも<br class="u-tablet--hidden">しっかり考えています。
           </h2>
           <h3 class="c-cap l-pc--only">
             世間では、終身雇用が保証されにくい世の中になってきました。<br />
@@ -203,9 +210,18 @@
             その時にあなたがエクステリア業界のプロになっていれば、たくさんの生きる道を作ることができます。<br />
             株式会社エンテックスでは、会社の成長だけでなく、あなたの成長も応援します。
           </h3>
+          <h3 class="c-cap l-sp--only">
+            世間では、終身雇用が保証されにくい世の中になってきました。<br />
+            その中で、「長く勤めることができる会社」「手に職をつけられる業種」は、<br>キャリア形成にも影響します。<br />
+            人が生きている以上、家や建物を建てることは無くなりません。<br />
+            また、古くなった建物を部分的に改修することは増えていきます。<br />
+            その時にあなたがエクステリア業界のプロになっていれば、たくさんの生きる道を作ることができます。<br />
+            株式会社エンテックスでは、会社の成長だけでなく、あなたの成長も応援します。
+          </h3>
         </div>
         <div class="c-career__banner">
           <picture>
+            <source media="(max-width:767px )" srcset="/assets/img/career/bannerSP.png">
             <source media="(max-width:1024px )" srcset="/assets/img/career/bannerT.png">
             <img src="/assets/img/career/banner.png" alt="もうすぐ創業50年、 あなたのキャリアプランもしっかり考えています。" />
           </picture>
@@ -238,9 +254,12 @@
             </div>
             <div class="c-career__bodyB">
               <span class="c-decorLeft"></span>
-              <h2 class="c-title u-clOrange u-fs25">
+              <h2 class="c-title u-clOrange u-fs25 u-tablet--display">
                 あなたは、どんな未来に向けて<br />
                 どんなキャリアで仕事をしたいですか？
+              </h2>
+              <h2 class="c-title u-clOrange u-fs25 u-tablet--hidden">
+                あなたは、<br>どんな未来に向けてどんなキャリアで仕事をしたいですか？
               </h2>
               <span class="c-decorRight"></span>
             </div>
@@ -252,86 +271,87 @@
               <% if(typeof histories !='undefined' ){%>
                 <% histories.image.forEach(item=>{%>
                   <picture>
+                      <source media="(max-width:767px )" srcset="<%= item.spUrl %>" />
                     <source media="(max-width:1024px )" srcset="<%- item.tabUrl %>" />
-                    <source media="(max-width:767px )" srcset="<%= item.spUrl %>" />
+                 
                     <img src="<%- item.pcUrl %>" alt="私たちの仕事" />
                   </picture>
                   <% })%>
                     <% }%>
             </div>
             <div class="c-box__R">
-              <div class="c-box__item">
-                <h2 class="c-title u-fs28 u-clOrange">
-                  充実した福利厚生サービス
-                </h2>
-                <% if(typeof histories.service !='undefined' ){ %>
-                  <% histories.service.forEach(item=>{%>
-                    <dl>
-                      <dt>
-                        <h3 class="c-box__dt c-box__dtDot"><%- item.dtTxt %></h3>
-                      </dt>
-                      <% if(typeof item.ddTxt !="undefined" ){ %>
-                        <% item.ddTxt.forEach(ddItem=>{%>
-                          <dd class="c-box__ddBox">
-                            <% if(item.ddClass=="c-box__ddStar" ){ %>
-                              <span class="c-box__ddStar">※</span>
-                              <% } %>
-                                <% if(item.ddClass=="c-box__ddDot" ){ %>
-                                  <span class="c-box__ddDot">・</span>
-                                  <% } %>
-                                    <h4 class="c-box__dd">
-                                      <%- ddItem.txt %>
-                                    </h4>
-                          </dd>
-                          <% })%>
-                            <% }%>
-                    </dl>
-                    <% })%>
-                      <% }%>
-              </div>
-              <div class="c-box__item c-box__itemEnd">
-                <h2 class="c-title u-fs28 u-clOrange l-pc--only">
-                  独立支援制度も充実!20代でも独立可能
-                </h2>
-                  <h2 class="c-title u-fs28 u-clOrange l-tab--only">
-                    独立支援制度も充実!
-                  </h2>
-                <% if(typeof histories.years !='undefined' ){ %>
-                  <% histories.years.forEach(item=>{%>
-                    <dl>
-                      <dt>
-                        <h3 class="c-box__dt c-box__dtDot"><%- item.dtTxt %></h3>
-                      </dt>
-                      <dd>
-                      
-                      
-          
-                      
-                        <h4 class="c-box__dd ">
-                          資格取得費用の援助
-                        </h4>
-                      </dd>
-                      <% if(typeof item.ddTxt !="undefined" ){ %>
-                        <% item.ddTxt.forEach(ddItem=>{%>
-                          <dd class="c-box__ddBox c-box__ddEnd">
-                            <% if(item.ddClass=="c-box__ddStar" ){ %>
-                              <span class="c-box__ddStar">※</span>
-                              <% } %>
-                                <% if(item.ddClass=="c-box__ddDot" ){ %>
-                                  <span class="c-box__ddDot">・</span>
-                                  <% } %>
-                                    <h4 class="c-box__dd ">
-                                      <%= ddItem.txt %>
-                                    </h4>
-                          </dd>
-                          <% })%>
-                            <% }%>
-                    </dl>
-                    <% })%>
-                      <% }%>
-              </div>
-
-              <div class="c-box__Rbody"></div>
+              <div class="c-career__servicedescription">
+                <div class="c-career__servicetop">
+                  <h3 class="c-career__servicetitletop">充実した福利厚生サービス</h3>
+                  <ul>
+                    <li class="c-career__dt1 c-career__servicedescriptionitemtitle">
+                      <span class="c-career__dot">●</span>遠方から弊社に入社される人は、ENTEX本社の上に社宅(社員<br class="is-pc">&#160;寮)があります。
+                    </li>
+                    <li class="c-career__dd1 c-career__servicedescriptionitemsubtitle">
+                      <span class="c-career__dot2">※</span>現在は満室のため、近くのワンルームから（自転車通勤圏内）通勤して<br class="is-pc">&#160;いただきます。
+                    </li>
+                    <li class="c-career__servicedescriptionitemtitle">
+                      <span class="c-career__dot">●</span>年1回社員旅行を開催<span class="c-career__bracket">(参加希望者のみ)</span>
+                    </li>
+                    <li class="c-career__dd2 c-career__servicedescriptionitemsubtitle">
+                      <span class="c-career__dot2">※</span>社員旅行積立金3,000円（会社が旅費の半分以上を負担）
+                    </li>
+                    <li class="c-career__dt3 c-career__servicedescriptionitemtitle">
+                      <span class="c-career__dot">●</span>社会保険完備<span class="c-career__bracket2">
+                        (雇用保険、労災保険、健康保険、厚生年金）</span>
+                    </li>
+                    <li class="c-career__dt4 c-career__servicedescriptionitemtitle">
+                      <span class="c-career__dot">●</span>希望者参加型の食事会<span class="c-career__bracket3">(費用は会社負担)</span>
+                    </li>
+                    <li class="c-career__dt5 c-career__servicedescriptionitemtitle">
+                      <span class="c-career__dot">●</span>各種手当も充実
+                    </li>
+                    <li class="c-career__ddsmall c-career__servicedescriptionitemsubtitle">
+                      ・皆勤手当：5,000円
+                    </li>
+                    <li class="c-career__ddsmall c-career__servicedescriptionitemsubtitle">
+                      ・雨天手当：1,000円
+                    </li>
+                    <li class="c-career__ddsmall c-career__servicedescriptionitemsubtitle">
+                      ・固定休日手当：5日分（賃金単価による）
+                    </li>
+                    <li class="c-career__ddsmall c-career__servicedescriptionitemsubtitle">
+                      ・資格手当
+                    </li>
+                    <li class="c-career__ddsmall c-career__servicedescriptionitemsubtitle">
+                      ・残業、休日手当
+                    </li>
+                    <li class="c-career__ddsmall c-career__servicedescriptionitemsubtitle">
+                      ・技能手当
+                    </li>
+                    <li class="c-career__ddsmall c-career__servicedescriptionitemsubtitle">
+                      ・通勤手当：月3万円まで
+                    </li>
+                    <li class="c-career__dt6 c-career__servicedescriptionitemtitle">
+                      <span class="c-career__dot">●</span>昇給あり
+                    </li>
+                    <li class="c-career__servicedescriptionitemtitle">
+                      <span class="c-career__dot">●</span>賞与あり（夏・冬 年2回）
+                    </li>
+                  </ul>
+                </div>
+                <div class="c-career__servicebottom">
+                  <h3 class="c-career__servicetitlebottom">
+                    独立支援制度も充実!<br class="is-tabnsp">20代でも独立可能
+                  </h3>
+                  <dl>
+                    <dt><span class="c-career__dot">●</span>独立支援制度</dt>
+                    <dd class="c-career__ddnodot">資格取得費用の援助</dd>
+                    <dd class="c-career__ddsmall">
+                      ・座学（法律、行政への対応）の勉強支援
+                    </dd>
+                    <dd class="c-career__ddsmall">・仕入先の紹介</dd>
+                    <dd class="c-career__ddsmall">
+                      ・顧問税理士、行政書士、弁護士の紹介
+                    </dd>
+                  </dl>
+                </div>
+                </div>
             </div>
           </div>
         </div>
@@ -341,18 +361,18 @@
       <div class="c-interview--main c-scrollBox">
         <h2 class="c-title u-fs44 u-clBlue">先輩社員からのメッセージ</h2>
         <h3 class="c-cap">
-          未経験で入社した多くのメンバーが活躍しています。<br />
-          各部門で活躍する現役メンバーたちの「リアルな声」をお届けします。
+          未経験で入社した多くのメンバーが<br class="u-tablet--hidden">活躍しています。<br />
+          各部門で活躍する現役メンバーたちの<br class="u-tablet--hidden">「リアルな声」をお届けします。
         </h3>
         <div class="c-interview--header">
           <div class="c-flexbox c-flexbox--3row">
             <% if(typeof interview !='undefined' ){%>
               <% interview.main.forEach(item=>{%>
                 <div class="c-flexbox__item">
-                  <div class="c-flexbox__border"></div>
+              
                   <picture>
-                    <source media="(max-width:1024px )" srcset="<%= item.tabImg %>" />
                     <source media="(max-width:767px )" srcset="<%= item.spImg %>" />
+                    <source media="(max-width:1024px )" srcset="<%= item.tabImg %>" />
                     <img class="c-flexbox__img" src="<%= item.pcImg %>" alt="先輩社員からのメッセージ" />
                   </picture>
 
@@ -368,14 +388,20 @@
                         <p class="c-flexbox__bannerName l-pc--only">
                           <%= item.name %>
                         </p>
-                          <p class="c-flexbox__bannerName l-tablet--only">
-                            <%= item.nameTab %>
+                        <p class="c-flexbox__bannerName l-tablet--only">
+                          <%= item.nameTab %>
+                        </p>
+                          <p class="c-flexbox__bannerName l-sp--only">
+                            <%= item.name %>
                           </p>
                         <p class="c-flexbox__bannerDesc l-pc--only">
                           <%= item.bannerDesc %>
                         </p>
                         <p class="c-flexbox__bannerDesc l-tablet--only">
                           <%= item.bannerDescTab %>
+                          <p class="c-flexbox__bannerDesc l-sp--only">
+                            <%= item.bannerDesc %>
+                          </p>
                         </p>
                       </div>
                     </div>
@@ -393,7 +419,8 @@
         </div>
         <div class="c-interview--body l-container">
           <div class="c-interview__exBox">
-            <h3 class="c-title u-fs34">代表メッセージ</h3>
+            <h3 class="c-title u-fs34 u-tablet--display">代表メッセージ</h3>
+              <h3 class="c-title u-fs34 u-tablet--hidden">代表者メッセージ</h3>
             <div class="c-interview--bodyM">
               <div class="c-interview--bodyL">
                 <h4 class="c-cap u-fs24">
@@ -413,9 +440,9 @@
               <div class="c-interview--bodyR">
                 <picture>
                   <source media="(max-width:1024px )" srcset="assets/img/interview/messImg1T.png">
-                    <img src="assets/img/interview/messImg1.png" alt="" />
+                  <img src="assets/img/interview/messImg1.png" alt="" />
                 </picture>
-              
+
               </div>
             </div>
             <h4 class="c-title u-fs24">
@@ -427,9 +454,9 @@
               株式会社ENTEX　代表取締役社長　遠藤 剛
             </h5>
             <h5 class="c-interview__sign l-tablet--only">
-            株式会社エンテックス　代表取締役社長　遠藤 剛
+              株式会社エンテックス　代表取締役社長　遠藤 剛
             </h5>
-            <div class="c-interview--bodyF">
+            <!-- <div class="c-interview--bodyF">
               <p class="c-interview__company">社名の由来</p>
               <div class="c-interview--footer">
                 <div class="c-interview__logo">
@@ -437,7 +464,7 @@
                     <source media="(max-width:1024px )" srcset="/assets/img/interview/logoT.png">
                     <img src="/assets/img/interview/logo.png" alt="" />
                   </picture>
-                 
+
                 </div>
 
                 <div class="c-interview--hastag">
@@ -458,7 +485,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -533,7 +560,7 @@
         </div>
       </div>
     </section>
-    <section class="c-recruit" id="recruit">
+    <!-- <section class="c-recruit" id="recruit">
       <div class="c-recruit--main c-scrollBox">
         <h2 class="c-title u-fs44 u-clBlue">採用情報</h2>
         <h3 class="c-cap">
@@ -546,7 +573,7 @@
             <span class="c-tablinks c-tablinks2" onclick="openTab(event, 'tab2')">中途採用</span>
           </div>
 
-     
+
           <div id="tab1" class="c-tab--content active">
             <table class="c-table">
               <tbody class="c-table__tbody">
@@ -562,11 +589,11 @@
                     新築販売(設計・施工・販売)、リフォーム事業、宅地建物取引業
                   </td>
                 </tr>
-                <tr  class="c-table__tr c-table__tr3">
+                <tr class="c-table__tr c-table__tr3">
                   <th>雇用形態</th>
                   <td>正社員</td>
                 </tr>
-                <tr  class="c-table__tr c-table__tr4">
+                <tr class="c-table__tr c-table__tr4">
                   <th>応募資格</th>
                   <td>
                     土木、建設、建築を学んだ方、未経験者も可
@@ -660,7 +687,7 @@
                     普通自動車免許取得者
                   </td>
                 </tr>
-                <tr >
+                <tr>
                   <th>給与</th>
                   <td>
                     現場監督、施工管理業務　350,000円　～500,000円 <br />
@@ -818,6 +845,12 @@
                   <span class="c-table__span">トラック7台／軽乗用車3台／乗用車5台／ハイエース1台</span>
                 </td>
               </tr>
+              <tr class="l-tablet--only">
+                <th><span class="c-table__span">施工管理者</span></th>
+                <td>
+                  <span class="c-table__span">20名</span>
+                </td>
+              </tr>
               <tr>
                 <th><span class="c-table__span">厚生施設</span></th>
                 <td><span class="c-table__span">社員寮あり</span></td>
@@ -828,29 +861,29 @@
                   <span class="c-table__span">第02700132723号、第02803132723号</span>
                 </td>
               </tr>
-              <tr>
+              <tr class="c-table__rowPcEnd">
                 <th><span class="c-table__span">アクセス</span></th>
                 <td>
                   <span class="c-table__span">西宮市役所から南へ徒歩10分</span>
                 </td>
               </tr>
               <tr class="l-tablet--only">
-                <th><span class="c-table__span">アクセス</span></th>
+                <th><span class="c-table__span">2級建築士事務所</span></th>
                 <td>
-                  <span class="c-table__span">西宮市役所から南へ徒歩10分</span>
+                  <span class="c-table__span">兵庫県知事登録第02 04382号</span>
                 </td>
               </tr>
               <tr class="l-tablet--only">
-                <th><span class="c-table__span">アクセス</span></th>
+                <th><span class="c-table__span">資本金</span></th>
                 <td>
-                  <span class="c-table__span">西宮市役所から南へ徒歩10分</span>
+                  <span class="c-table__span">1000万円</span>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <!-- @@content -->
 

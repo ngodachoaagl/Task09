@@ -1,7 +1,11 @@
 <header class="c-header">
   <div class="c-header--main  l-container">
     <a href="<%= BASE_URL %>index.html" class="c-header__logo">
-      <img class="c-header__logoIMG" src="/assets/img/header/logo.png" alt="ENTEX">
+      <picture>
+        <source media="(max-width:767px )" srcset="assets/img/header/logoSP.png">
+        <img class="c-header__logoIMG" src="/assets/img/header/logo.png" alt="ENTEX">
+      </picture>
+     
 
     </a>
     <div class="c-header__nav l-pc--only">
@@ -33,7 +37,11 @@
         <img class="c-header--Licon" src="/assets/img/header/note.svg" alt="募集要項">
         <span class="c-header--Ltxt">募集要項</span>
       </a>
+      <div class="c-header__bar l-sp--only">
+        <img src="/assets/img/header/bar.svg" alt="">
+      </div>
     </div>
+   
   </div>
   <div class="c-header__nav l-tablet--only">
     <ul>

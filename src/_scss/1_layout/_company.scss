@@ -1,9 +1,10 @@
 .c-company {
     margin-top: 91px;
     margin-bottom: 50px;
-@include tab{
-    margin-top: 51px;
-}
+    @include tab {
+        margin-top: 51px;
+    }
+
     .c-title {
         text-align: center;
     }
@@ -11,16 +12,16 @@
     .c-company--body {
         max-width: 960px;
         margin: 49px auto 0;
-        @include tab{
+        @include tab {
             padding: 0 20px;
-             margin: 25px auto 0;
+            margin: 25px auto 0;
         }
     }
 
     table {
         color: #0b0b0b;
         border-collapse: collapse;
-         table-layout: fixed;
+        table-layout: fixed;
 
     }
 
@@ -32,6 +33,15 @@
 
         &:last-of-type {
             border-bottom: 1px solid #cbcbcb;
+        }
+
+       
+    }
+
+    .c-table__rowPcEnd {
+        border-bottom: 1px solid #cbcbcb;
+        @include tab {
+            border-bottom: none;
         }
     }
 
@@ -47,28 +57,28 @@
         letter-spacing: 0.38px;
         border-right: 1px solid #cbcbcb;
         vertical-align: top;
-        @include tab{
-              width: 30.6%;
-                 font-size: 1.4rem;
-                      padding: 14px 0 14px 19px;
+        @include tab {
+            width: 30.6%;
+            font-size: 1.4rem;
+            padding: 14px 0 14px 19px;
         }
     }
 
     td {
-        // width: 70%;
+    
         letter-spacing: 0.38px;
         font-weight: 400;
         font-size: 1.6rem;
         padding: 14px 25px 10px 19px;
-        @include tab{
+        @include tab {
             font-size: 1.4rem;
-             padding: 14px 25px 10px 28px;
+            padding: 14px 25px 15px 28px;
         }
     }
 
     .c-table__span {
         line-height: 1.87;
-        @include tab{
+        @include tab {
             line-height: 1.77;
         }
     }
@@ -76,8 +86,8 @@
     .c-table__row8 {
         td {
             padding: 14px 25px 12px 19px;
-            @include tab{
-                    padding: 14px 25px 12px 31px;
+            @include tab {
+                padding: 14px 25px 12px 31px;
             }
         }
     }
@@ -85,8 +95,8 @@
     .c-table__row9 {
         td {
             padding: 14px 25px 15px 19px;
-            @include tab{
-                    padding: 14px 25px 15px 31px;
+            @include tab {
+                padding: 24px 25px 15px 31px;
             }
         }
     }
@@ -94,24 +104,25 @@
     .c-table__row15 td,
     .c-table__row15 th {
         padding: 14px 25px 7px 19px;
-        @include tab{
-                    padding: 14px 25px 7px 31px;
-            }
+        @include tab {
+            padding: 14px 25px 11px 31px;
+        }
     }
 
     .c-table__row16 {
         td,
         th {
             padding: 14px 25px 14px 19px;
-            @include tab{
-                    padding: 14px 25px 14px 31px;
+            @include tab {
+                padding: 14px 25px 6px 31px;
             }
         }
     }
 
-
-    .l-tablet--only{
-        display: table-row;
+    @include tab {
+        .l-tablet--only {
+            display: table-row;
+        }
     }
 }
 

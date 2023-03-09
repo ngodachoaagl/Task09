@@ -11,6 +11,12 @@
         transform: translate(-50%, -50%);
         background-color: $cl-orange--1;
         content: "";
+        @include sp {
+            top: -9px;
+            left: 5px;
+            height: 4px;
+            width: 30px;
+        }
     }
 
     &::after {
@@ -22,6 +28,12 @@
         transform: translate(-50%, -50%);
         background-color: $cl-orange--1;
         content: "";
+        @include sp {
+            top: -3px;
+            left: 0;
+            height: 31.3px;
+            width: 4px;
+        }
     }
 }
 
@@ -44,6 +56,12 @@
         transform: translate(-50%, -50%);
         background-color: $cl-orange--1;
         content: "";
+        @include sp {
+            top: 20px;
+            left: 8px;
+            height: 4px;
+            width: 31.5px;
+        }
     }
 
     &::after {
@@ -55,5 +73,12 @@
         transform: translate(-50%, -50%);
         background-color: $cl-orange--1;
         content: "";
+        @include sp {
+            top: 14px;
+            left: 13px;
+            height: 32.3px;
+            width: 4px;
+
+        }
     }
 }

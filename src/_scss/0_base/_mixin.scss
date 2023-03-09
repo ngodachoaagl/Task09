@@ -25,3 +25,141 @@
         @content;
     }
 }
+
+.is-open {
+    display: block !important;
+}
+
+.is-hide {
+    display: none !important;
+}
+
+.is-show {
+    display: block;
+}
+
+.is-close {
+    display: none;
+}
+
+.is-fixed {
+    overflow: hidden;
+}
+
+.is-pc {
+    display: block;
+    @include tab {
+        display: none;
+    }
+    @include sp {
+        display: none;
+    }
+}
+
+.is-pcntab {
+    display: block;
+    @include tab {
+        display: block;
+    }
+    @include sp {
+        display: none;
+    }
+}
+
+.is-tabnsp {
+    display: none;
+    @include tab {
+        display: block;
+    }
+    @include sp {
+        display: block;
+    }
+}
+
+.is-tabnpctr {
+    display: table-row;
+    @include tab {
+        display: table-row;
+    }
+    @include sp {
+        display: none;
+    }
+}
+
+.is-tabnsptr {
+    display: none;
+    @include tab {
+        display: table-row;
+    }
+    @include sp {
+        display: table-row;
+    }
+}
+
+.is-tabtr {
+    display: none;
+    @include tab {
+        display: table-row;
+    }
+    @include sp {
+        display: none;
+    }
+}
+
+.is-tabnpc {
+    display: block;
+    @include sp {
+        display: none;
+    }
+}
+
+.is-pcnsp {
+    display: block;
+    @include tab {
+        display: none;
+    }
+    @include sp {
+        display: block;
+    }
+}
+
+.is-tab {
+    display: none;
+    @include tab {
+        display: block;
+    }
+    @include sp {
+        display: none;
+    }
+}
+
+.is-sp {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}
+
+.is-pctr {
+    display: table-row;
+    @include sp {
+        display: none;
+    }
+}
+
+.is-pcspan {
+    display: inline-block;
+    @include tab {
+        display: none;
+    }
+    @include sp {
+        display: none;
+    }
+}
+
+.is-spspan {
+    display: none;
+    @include sp {
+        display: inline-block;
+    }
+}

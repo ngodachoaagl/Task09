@@ -1,0 +1,92 @@
+.c-interviewModal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 85px 120px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    .c-interviewModal__content {
+        background-color: $cl-white--1;
+        margin: 0 auto;
+        padding: 42px 57px 99px;
+        border: 4px solid $cl-blue--1;
+        max-width: 960px;
+        position: relative;
+    }
+
+    .c-interviewModal__main {
+        display: flex;
+    }
+
+    .c-title {
+        letter-spacing: 1.78px;
+        margin-bottom: 30px;
+    }
+
+    .c-closeInterview {
+        margin-top: 40px;
+        display: inline-block;
+        color: $cl-white--1;
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 1.98px;
+        border-radius: 9px;
+        background-color: $cl-blue--1;
+        padding: 8px 22px;
+        cursor: pointer;
+        position: absolute;
+        right: 5.9%;
+        bottom: 3.8%;
+    }
+
+    .c-interviewModal__R {
+        width: 34.6%;
+        margin-right: 40px;
+    }
+
+    .c-interviewModal__L {
+        width: calc(100% - 34.6% - 40px);
+        color: $cl-gray--1;
+    }
+
+    .c-interviewModal__banner {
+        background-color: $cl-blue--1;
+        text-align: center;
+        padding: 10px 15px 12px;
+    }
+
+    .c-interviewModal__name {
+        font-size: 2.4rem;
+        letter-spacing: 0.58px;
+    }
+
+    .c-interviewModal__desc {
+        font-size: 1.6rem;
+        letter-spacing: 0.38px;
+    }
+
+    .c-interview__dl {
+        margin-bottom: 28px;
+    }
+
+    .c-interview__dt {
+        margin-bottom: 9px;
+    }
+
+    .c-interview__dtTxt {
+        font-size: 1.8rem;
+        letter-spacing: 0.43px;
+        line-height: 1.1;
+
+    }
+
+    .c-interview__ddTxt {
+        letter-spacing: 0.38px;
+        line-height: 1.91;
+    }
+}

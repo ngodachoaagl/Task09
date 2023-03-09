@@ -23,6 +23,31 @@
       }
     ]
   },
+  "serviceImages": {
+    "url": [
+      {
+        "src": "/assets/img/career/img1.png",
+        "srcSp": "/assets/img/career/img1SP.png",
+        "srcTab": "/assets/img/career/img1T.png"
+      },
+      {
+        "src": "/assets/img/career/img2.png",
+        "srcSp": "/assets/img/career/img2SP.png",
+        "srcTab": "/assets/img/career/img2T.png"
+      },
+      {
+      "src": "/assets/img/career/img3.png",
+      "srcSp": "/assets/img/career/img3SP.png",
+      "srcTab": "/assets/img/career/img3T.png",
+        "class": "c-career__fiximage"
+      },
+      {
+        "src": "/assets/img/career/img4.png",
+        "srcSp": "/assets/img/career/img4SP.png",
+        "srcTab": "/assets/img/career/img4T.png"
+      }
+    ]
+  },
   "work": {
     "img": [
       {
@@ -171,7 +196,7 @@
       },
       {
         "histTitle": "入社10年目〜 独立か、管理職か。",
-        "histDesc": "独立を希望する人は、<br> 建築士や施工管理技術者への資格の取得、独立に向けての勉強までサポートします。独立後はENTEXから仕事を受注することも可能です。仕入先の紹介なども行ないますので、安心して独立できます。<br><br> 独立を望まない人は、<br> 管理職となり職人の管理や他社が開催する会議へ参加したり、お客様との 工事打合せの作業内容確認を行います。"
+        "histDesc": "独立を希望する人は、<br> 建築士や施工管理技術者への資格の取得、独立に向けての勉強までサポートします。独立後はENTEXから仕事を受注することも可能です。仕入先の紹介なども行ないますので、安心して独立できます。<br><br> <span>独立を望まない人は、<br> 管理職となり職人の管理や他社が開催する会議へ参加したり、お客様との 工事打合せの作業内容確認を行います。</span>"
       }
     ],
     "service": [

@@ -4,11 +4,24 @@
     @include tab {
         padding-left: 20px;
     }
+    @include sp {
+        padding-left: 10px;
+        flex-wrap: wrap;
+    }
 
     .c-box__L {
         width: 400px;
         @include tab {
             width: 288px;
+        }
+        @include sp {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            & > * {
+                width: 50%;
+            }
         }
     }
 
@@ -16,6 +29,9 @@
         width: calc(100% - 400px);
         @include tab {
             width: calc(100% - 288px);
+        }
+        @include sp {
+            width: 100%;
         }
 
         .c-box__desc {

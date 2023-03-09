@@ -31,3 +31,16 @@
 }
 
 
+.u-tablet--hidden {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}
+
+.u-tablet--display {
+
+    @include sp {
+        display: none;
+    }
+}

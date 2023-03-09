@@ -2,18 +2,29 @@
     background-color: $cl-white--1;
     width: 100%;
     border-top: 1px solid $cl-blue--1;
+    @include tab {
+        margin-top: 59px;
+    }
 
     .c-footer--main {
         height: 80px;
         display: flex;
         align-items: center;
         padding: 0 21px;
+        @include tab {
+            justify-content: space-between;
+        }
 
         .c-footer__logo {
             padding: 12px 0 0;
 
             margin-right: 130px;
             position: relative;
+            @include tab {
+                padding: 21px 0 0;
+
+                transform: translateX(-1px);
+            }
         }
 
         .c-footer__nav {
@@ -34,6 +45,9 @@
 
         .c-footer__left {
             padding-top: 7px;
+            @include tab {
+                padding-top: 17px;
+            }
 
             .c-footer--assign {
                 background-color: $cl-blue--1;
@@ -59,13 +73,17 @@
         float: right;
         padding-right: 60px;
         margin-top: 19px;
- 
+        @include tab {
+            padding-right: 19px;
+            margin-top: 9px;
+        }
     }
 
     .c-footer__breadcrumbTxt {
         font-size: 1.4rem;
         letter-spacing: 0.28px;
         color: #a0a0a0;
+       
     }
 
     .c-footer__copyright {
@@ -73,12 +91,38 @@
         text-align: center;
         margin-top: 56px;
         padding: 14px;
+        @include tab {
+            margin-top: 45px;
+
+            padding: 6px 4px 3px;
+
+        }
     }
 
     .c-footer__copyrightTxt {
         font-size: 1.4rem;
         letter-spacing: 0.34px;
         display: block;
-      
+        @include tab {
+            font-size: 1.2rem;
+            letter-spacing: 0.29px;
+        }
+    }
+
+    .l-tablet--only {
+        ul {
+            margin-top: 18px;
+            display: flex;
+            padding: 7px 43px 16px;
+            border-bottom: 1px solid #efefef;
+
+            justify-content: space-between;
+        }
+
+        a {
+            color: $cl-blue--1;
+            font-size: 1.6rem;
+            letter-spacing: 0.32px;
+        }
     }
 }
