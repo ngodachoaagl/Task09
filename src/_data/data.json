@@ -23,31 +23,7 @@
       }
     ]
   },
-  "serviceImages": {
-    "url": [
-      {
-        "src": "/assets/img/career/img1.png",
-        "srcSp": "/assets/img/career/img1SP.png",
-        "srcTab": "/assets/img/career/img1T.png"
-      },
-      {
-        "src": "/assets/img/career/img2.png",
-        "srcSp": "/assets/img/career/img2SP.png",
-        "srcTab": "/assets/img/career/img2T.png"
-      },
-      {
-      "src": "/assets/img/career/img3.png",
-      "srcSp": "/assets/img/career/img3SP.png",
-      "srcTab": "/assets/img/career/img3T.png",
-        "class": "c-career__fiximage"
-      },
-      {
-        "src": "/assets/img/career/img4.png",
-        "srcSp": "/assets/img/career/img4SP.png",
-        "srcTab": "/assets/img/career/img4T.png"
-      }
-    ]
-  },
+
   "work": {
     "img": [
       {
@@ -112,49 +88,62 @@
         "imgPC": "/assets/img/album/img1.png",
         "imgTab": "/assets/img/album/img1T.png",
         "imgSP": "/assets/img/album/img1SP.png",
-        "imgModal": "/assets/img/album/img1Modal.jpg"
+        "imgModal": "/assets/img/album/img1Modal.jpg",
+          "imgModalSP": "/assets/img/album/img1ModalSP.png"
       },
       {
         "imgPC": "/assets/img/album/img2.png",
           "imgTab": "/assets/img/album/img2T.png",
         "imgSP": "/assets/img/album/img2SP.png",
         "imgModal": "/assets/img/album/img2Modal.jpg"
+        ,
+        "imgModalSP": "/assets/img/album/img2Modal.jpg"
+        
       },
       {
         "imgPC": "/assets/img/album/img3.png",
           "imgTab": "/assets/img/album/img3T.png",
         "imgSP": "/assets/img/album/img3SP.png",
         "imgModal": "/assets/img/album/img3Modal.jpg"
+        ,
+        "imgModalSP": "/assets/img/album/img3Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img4.png",
           "imgTab": "/assets/img/album/img4T.png",
         "imgSP": "/assets/img/album/img4SP.png",
-        "imgModal": "/assets/img/album/img4Modal.jpg"
+        "imgModal": "/assets/img/album/img4Modal.jpg",
+        "imgModalSP": "/assets/img/album/img4Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img5.png",
           "imgTab": "/assets/img/album/img5T.png",
         "imgSP": "/assets/img/album/img5SP.png",
         "imgModal": "/assets/img/album/img5Modal.jpg"
+        ,
+        "imgModalSP": "/assets/img/album/img5Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img6.png",
           "imgTab": "/assets/img/album/img6T.png",
         "imgSP": "/assets/img/album/img6SP.png",
-        "imgModal": "/assets/img/album/img6Modal.jpg"
+        "imgModal": "/assets/img/album/img6Modal.jpg",
+        "imgModalSP": "/assets/img/album/img6Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img7.png",
           "imgTab": "/assets/img/album/img7T.png",
         "imgSP": "/assets/img/album/img7SP.png",
         "imgModal": "/assets/img/album/img7Modal.jpg"
+        ,
+        "imgModalSP": "/assets/img/album/img7Modal.jpg"
       },
       {
         "imgPC": "/assets/img/album/img8.png",
           "imgTab": "/assets/img/album/img8T.png",
         "imgSP": "/assets/img/album/img8SP.png",
-        "imgModal": "/assets/img/album/img8Modal.jpg"
+        "imgModal": "/assets/img/album/img8Modal.jpg",
+        "imgModalSP": "/assets/img/album/img8Modal.jpg"
       }
     ]
   },

@@ -23,6 +23,7 @@
         @include tab {
             font-size: 3rem;
             letter-spacing: 1.62px;
+            margin-bottom: 7px;
         }
         @include sp {
             font-size: 2.4rem;
@@ -35,6 +36,7 @@
         line-height: 1.73;
         @include tab {
             font-size: 1.4rem;
+            line-height: 1.78;
             letter-spacing: 0.34px;
         }
         @include sp {
@@ -79,7 +81,7 @@
         padding: 8.6% 2% 9% 3.7%;
         max-height: 944px;
         @include tab {
-            padding: 7.2% 2.7% 9%;
+            padding: 7.1% 2.7% 9%;
             max-height: 748px;
         }
         @include sp {

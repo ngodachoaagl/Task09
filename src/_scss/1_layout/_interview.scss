@@ -66,7 +66,7 @@
         }
         @include sp {
             margin-top: 19px;
-            padding: 55px 20px 40px;
+            padding: 55px 20px 1px;
         }
 
         .c-interview__exBox {
@@ -86,6 +86,7 @@
                 font-size: 2.4rem !important;
                 letter-spacing: 1.3px;
                 line-height: 1.25;
+                margin-bottom: 30px;
             }
         }
 
@@ -108,6 +109,15 @@
 
                 margin-bottom: 45px;
             }
+            @include sp {
+                margin-top: 15px;
+                padding-right: 5px;
+                font-size: 1.6rem !important;
+                letter-spacing: 0.16px;
+                line-height: 1.69;
+                margin-bottom: 9px;
+
+            }
         }
     }
 
@@ -119,6 +129,7 @@
         }
         @include sp {
             display: block;
+            margin-bottom: 0;
         }
     }
 
@@ -143,6 +154,9 @@
                 letter-spacing: 0.98px;
                 margin-bottom: 27px;
             }
+            @include sp {
+                margin-bottom: 30px;
+            }
         }
 
         .c-interview__desc {
@@ -153,6 +167,13 @@
             @include tab {
                 padding-right: 41px;
             }
+            @include sp {
+                font-size: 1.4rem;
+                letter-spacing: 0.34px;
+                line-height: 1.57;
+                padding-right: 0;
+                margin-bottom: 32.5px;
+            }
         }
     }
 
@@ -161,6 +182,11 @@
         padding-left: 47px;
         @include tab {
             padding: 0;
+        }
+        @include sp {
+            max-width: 240px;
+          
+            margin: 35px auto 0;
         }
     }
 
@@ -171,6 +197,12 @@
         @include tab {
             font-size: 1.8rem;
         }
+        @include sp {
+            font-size: 1.4rem;
+            letter-spacing: 0.34px;
+            line-height: 1.78;
+            text-align: right;
+        }
     }
 
     .c-interview__company {
@@ -178,6 +210,12 @@
         font-size: 3.4rem;
         font-weight: 500;
         letter-spacing: 2.52px;
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 1.3px;
+            line-height: 1.25;
+            margin-top: 30px;
+        }
     }
 
     .c-interview--footer {
@@ -188,6 +226,9 @@
 
             max-width: 768px;
             margin: 24px auto 0;
+        }
+        @include sp {
+            display: block;
         }
     }
 
@@ -205,11 +246,22 @@
             margin-right: 41px;
             transform: translateY(7px);
         }
+        @include sp {
+            width: 100%;
+            height: 80px;
+            max-width: 335px;
+            transform: translateY(0);
+            margin-right: 0;
+            margin-top: 37px;
+        }
 
         img {
             transform: translate(-5px, 1px);
             @include tab {
                 transform: translate(0, 1.5px);
+            }
+            @include sp {
+                transform: scale(50%);
             }
         }
     }
@@ -221,6 +273,11 @@
             padding-left: 0;
             width: calc(100% - 247px - 41px);
         }
+        @include sp {
+            width: 100%;
+            margin-top: 26px;
+            padding: 0 20px 0 10px;
+        }
     }
 
     .c-interview--hastag1,
@@ -230,6 +287,9 @@
         margin-bottom: 24px;
         @include tab {
             margin-bottom: 28px;
+        }
+        @include sp {
+            margin-bottom: 20px;
         }
     }
 
@@ -253,6 +313,11 @@
         @include tab {
             width: 112px;
         }
+        @include sp {
+            font-size: 2rem;
+            letter-spacing: 0.48px;
+            width: 25%;
+        }
 
         &::after {
             position: absolute;
@@ -269,6 +334,11 @@
                 right: 3%;
                 top: 70.5%;
             }
+            @include sp {
+                width: 17px;
+                right: 7%;
+                top: 51.5%;
+            }
         }
     }
 
@@ -276,6 +346,12 @@
         transform: translateY(2px);
         @include tab {
             transform: translateY(5px);
+        }
+        @include sp {
+            transform: translateY(1px);
+            font-size: 1.4rem;
+            letter-spacing: 0.34px;
+            line-height: 1.57;
         }
     }
 }

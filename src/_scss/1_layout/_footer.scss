@@ -14,6 +14,11 @@
         @include tab {
             justify-content: space-between;
         }
+        @include sp {
+            height: unset;
+            padding: 10px 11px 16px;
+            border-bottom: 1px solid #efefef;
+        }
 
         .c-footer__logo {
             padding: 12px 0 0;
@@ -24,6 +29,28 @@
                 padding: 21px 0 0;
 
                 transform: translateX(-1px);
+            }
+            @include sp {
+                     
+                width: 100px;
+                padding: 0;
+                margin-right: 10px;
+                position: relative;
+
+                &::after {
+                    content: "Recruitment 2020";
+                    color: $cl-gray--1;
+                    font-size: 1.2rem;
+                    position: absolute;
+                    bottom: 17%;
+                    right: 10%;
+                    @include sp {
+                        font-size: 0.8rem;
+                        letter-spacing: 0.16px;
+                        bottom: -35%;
+                        right: 8%;
+                    }
+                }
             }
         }
 
@@ -77,12 +104,23 @@
             padding-right: 19px;
             margin-top: 9px;
         }
+        @include sp {
+            padding-right: 11px;
+            margin-top: 14px;
+           
+           
+        }
     }
 
     .c-footer__breadcrumbTxt {
         font-size: 1.4rem;
         letter-spacing: 0.28px;
         color: #a0a0a0;
+        @include sp {
+            font-size: 1.2rem;
+            letter-spacing: 0.24px;
+            text-decoration: underline;
+        }
        
     }
 
@@ -97,6 +135,10 @@
             padding: 6px 4px 3px;
 
         }
+        @include sp {
+            margin-top: 54px;
+            padding: 8px 4px 7px;
+        }
     }
 
     .c-footer__copyrightTxt {
@@ -106,6 +148,10 @@
         @include tab {
             font-size: 1.2rem;
             letter-spacing: 0.29px;
+        }
+        @include sp {
+            font-size: 1rem;
+            letter-spacing: 0.24px;
         }
     }
 

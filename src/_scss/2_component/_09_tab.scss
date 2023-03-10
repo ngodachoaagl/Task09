@@ -5,22 +5,17 @@
     align-items: flex-end;
 }
 
-/* Style the buttons that are used to open the tab content */
 .c-tab .c-tablinks {
     width: 50%;
     text-align: center;
     cursor: pointer;
-  
+
     transition: 0.3s;
     display: inline-block;
     font-size: 2.6rem;
     letter-spacing: 0.62px;
-
- 
-    
 }
 
-/* Change background color of buttons on hover */
 .c-tablinks1 {
     color: $cl-blue--1;
     border: 1px solid $cl-blue--1;
@@ -30,6 +25,11 @@
     border-radius: 20px 0 0;
     @include tab {
         padding: 14px 16px 4px;
+    }
+    @include sp {
+        font-size: 1.6rem !important;
+        letter-spacing: 0.16px;
+        padding: 16px 16px 9px;
     }
 }
 
@@ -43,9 +43,13 @@
     @include tab {
         padding: 14px 16px 4px;
     }
+    @include sp {
+        font-size: 1.6rem !important;
+        letter-spacing: 0.16px;
+        padding: 16px 16px 9px;
+    }
 }
 
-/* Create an active/current tablink class */
 .c-tab .c-tablinks1.active {
     background-color: $cl-blue--1;
     width: 58.1%;
@@ -54,7 +58,11 @@
     border-radius: 10px 10px 0 0;
     @include tab {
         padding: 17px 16px 7px;
-
+    }
+    @include sp {
+        font-size: 1.6rem !important;
+        letter-spacing: 0.38px;
+        padding: 16px 16px 9px;
     }
 }
 
@@ -66,11 +74,14 @@
     border-radius: 10px 10px 0 0;
     @include tab {
         padding: 17px 16px 7px;
-
+    }
+    @include sp {
+        font-size: 1.6rem !important;
+        letter-spacing: 0.38px;
+        padding: 16px 16px 9px;
     }
 }
 
-/* Style the tab content */
 .c-tab--content {
     display: none;
     padding: 52px 34px 57px;
@@ -80,10 +91,13 @@
     @include tab {
         padding: 30px 18px 40px;
     }
+    @include sp {
+        padding: 10px 5px 50px;
+    }
 }
 
 .c-tab--content {
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    animation: fadeEffect 1s;
 }
 
 .c-tab--content.active {
@@ -97,7 +111,7 @@
         border-color: $cl-gray--1;
     }
 }
-/* Go from zero to full opacity */
+
 @keyframes fadeEffect {
     from {
         opacity: 0;

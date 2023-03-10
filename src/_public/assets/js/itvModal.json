@@ -3,6 +3,7 @@
         {
             "id": 1,
             "imgPCSrc": "/assets/img/interview/modal/modal1.png",
+            "imgSPSrc": "/assets/img/interview/modal/modal1SP.png",
             "name": "安川　聖 (30)",
             "desc": "入社2年目・外構担当職人",
             "title":"いつも明るく元気に作業。朝も一番に出勤してます！",
@@ -44,6 +45,7 @@
         {
             "id": 2,
             "imgPCSrc": "/assets/img/interview/modal/modal2.png",
+            "imgSPSrc": "/assets/img/interview/modal/modal2.png",
             "name": "福元　和稔 (45)",
             "desc": "入社3年目・土木、外構担当職長",
             "title":"職長として土木・外構工事の現場管理をしながら作業指示",
@@ -85,6 +87,7 @@
         {
             "id": 3,
             "imgPCSrc": "/assets/img/interview/modal/modal3.png",
+            "imgSPSrc": "/assets/img/interview/modal/modal3.png",
             "name": "工藤 智成 (41)",
             "desc": "入社2年目・外構担当職人",
             "title":"高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ",

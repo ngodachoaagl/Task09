@@ -24,12 +24,13 @@ for (let item of btnPick) {
     item.addEventListener('click', function (e) {
         let imgSrc = e.currentTarget.getAttribute("data-source");
         modal.style.display = "block";
-
         modal.querySelector('.c-modal__img').src = imgSrc;
+        document.body.style.overflow = "hidden"
     })
 }
 btnClose.onclick = function () {
     modal.style.display = "none";
+    document.body.style.overflow = "unset"
 }
 
 
@@ -70,7 +71,12 @@ for (let item of btnInterview) {
           <h4 class="c-title u-clBlue u-fs24">${dataItem.title}</h4>
           <div class="c-interviewModal__main">
             <div class="c-interviewModal__R">
-              <img src="${dataItem.imgPCSrc}" alt="">
+            <picture>
+  <source media="(max-width:1024px)" srcset="${dataItem.imgSPSrc}">
+ 
+   <img src="${dataItem.imgPCSrc}" alt="">
+</picture>
+            
               <div class="c-interviewModal__banner">
                 <p class="c-interviewModal__name">${dataItem.name}</p>
                 <p class="c-interviewModal__desc">${dataItem.desc}</p>
@@ -86,10 +92,11 @@ ${dlContent}
         </div>`
             interViewModal.innerHTML = content;
         }
+        document.body.style.overflow = "hidden"
         let close = document.getElementsByClassName("c-closeInterview")[0];
         close.onclick = function () {
             interViewModal.style.display = "none";
-
+            document.body.style.overflow = "unset"
         }
 
     })
@@ -103,9 +110,11 @@ btnCloseInterview.onclick = function () {
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        document.body.style.overflow = "unset"
     }
     if (event.target == interViewModal) {
         interViewModal.style.display = "none";
+        document.body.style.overflow = "unset"
     }
 }
 function openTab(evt, tabNum) {
@@ -122,3 +131,25 @@ function openTab(evt, tabNum) {
     evt.currentTarget.className += " active";
 }
 window.openTab = openTab;
+let navbarBtn = document.getElementById("navbarToggle");
+navbarBtn.addEventListener('click',function(){
+    if(!navbarBtn.classList.contains('is-active')){
+        this.classList.add('is-active')
+        this.src = '/assets/img/header/closemenu.svg' 
+        headerMenu.style.display = 'block';
+    }else{
+        this.classList.remove('is-active')
+        this.src = '/assets/img/header/bar.svg' 
+        headerMenu.style.display = 'none';
+    }
+   
+})
+let headerMenu = document.getElementById('c-header__menu')
+let listMenuLi = document.querySelectorAll('.c-header__menuLi');
+for(let li of listMenuLi){
+    li.addEventListener('click',function(){
+        headerMenu.style.display = 'none';
+        navbarBtn.src = '/assets/img/header/bar.svg' 
+    
+    })
+}

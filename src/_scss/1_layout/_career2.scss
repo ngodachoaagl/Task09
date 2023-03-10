@@ -8,8 +8,8 @@
     color: $cl-orange--1;
     @include tab {
         letter-spacing: 0;
-        margin-top: 60px;
-        margin-bottom: 3px;
+        margin-top: 56px;
+        margin-bottom: 5px;
     }
     @include sp {
         font-size: 2.2rem;
@@ -27,8 +27,8 @@
     letter-spacing: 0.6px;
     margin-bottom: 14px;
     @include tab {
-        margin-top: 50px;
-        margin-bottom: 7px;
+        margin-top: 46px;
+        margin-bottom: 10px;
     }
     @include sp {
         font-size: 2.2rem;
@@ -71,6 +71,13 @@
 
 .c-career__servicedescription {
     margin-left: 40px;
+    @include tab {
+        margin-left: 21px;
+        padding-right: 27px;
+    }
+    @include sp {
+        padding-bottom: 30px;
+    }
 
     dt {
         font-size: 1.8rem;
@@ -93,7 +100,7 @@
         color: $cl-gray--1;
         padding-left: 20px;
         @include tab {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-weight: 400;
         }
         @include sp {
@@ -102,9 +109,6 @@
         }
     }
     @include tab {
-        width: 60.5%;
-        // transform: translateX(-20px);
-
         dt {
         }
 
@@ -113,7 +117,7 @@
         }
     }
     @include sp {
-        margin-left: 9px;
+        margin-left: 10px;
 
         dt {
             letter-spacing: 0;
@@ -146,7 +150,7 @@
 
 .c-career__dt1 {
     @include tab {
-        letter-spacing: -1.4px !important;
+        
     }
 }
 
@@ -175,7 +179,7 @@
     }
     @include sp {
         margin-top: 1px;
-        margin-bottom: 38px;
+        margin-bottom: 19px;
         padding-left: 17px !important;
         letter-spacing: 0.4px;
     }
@@ -216,7 +220,7 @@
     margin-bottom: 10px;
     @include tab {
         margin-top: 8px;
-        letter-spacing: -0.7px !important;
+        letter-spacing: 0.34px !important;
     }
     @include sp {
         margin-top: 7px;
@@ -266,8 +270,10 @@
     padding-bottom: 4px;
     letter-spacing: 0.4px;
     @include tab {
-        padding-left: 19px !important;
-        letter-spacing: -0.6px;
+        padding-left: 22px !important;
+        letter-spacing: 0.34px;
+        font-size: 1.4rem;
+        
     }
     @include sp {
         padding-left: 11px !important;
@@ -284,9 +290,12 @@
     letter-spacing: 0.5px;
     @include tab {
         margin-top: 10px;
-        padding-left: 24px !important;
-        letter-spacing: 2.1px;
-        margin-bottom: 8px;
+        padding-left: 22px !important;
+        letter-spacing: 0.34px;
+        margin-bottom: 4px;
+    }
+    @include sp {
+        padding-left: 11px !important;
     }
 }
 

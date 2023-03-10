@@ -41,6 +41,6 @@
 .u-tablet--display {
 
     @include sp {
-        display: none;
+        display: none !important;
     }
 }

@@ -5,7 +5,7 @@
         <source media="(max-width:767px )" srcset="assets/img/header/logoSP.png">
         <img class="c-header__logoIMG" src="/assets/img/header/logo.png" alt="ENTEX">
       </picture>
-     
+
 
     </a>
     <div class="c-header__nav l-pc--only">
@@ -38,10 +38,10 @@
         <span class="c-header--Ltxt">募集要項</span>
       </a>
       <div class="c-header__bar l-sp--only">
-        <img src="/assets/img/header/bar.svg" alt="">
+        <img id="navbarToggle" src="/assets/img/header/bar.svg" alt="">
       </div>
     </div>
-   
+
   </div>
   <div class="c-header__nav l-tablet--only">
     <ul>
@@ -63,7 +63,42 @@
           </li>
           <% }) %>
             <% } %>
-  
+
     </ul>
   </div>
+
+  <div id="c-header__menu" class="c-header__menu">
+    <ul>
+      <% if (typeof linklists !='undefined' ) { %>
+        <% linklists.main && linklists.main.forEach(link=> { %>
+          <li class="c-header__menuLi">
+            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><img src="/assets/img/header/play-icon.svg" alt="123"><span><%= link.title %></span>
+            </a>
+            <% if (link.links) { %>
+              <ul>
+                <% link.links.forEach(child_link=> { %>
+                  <li>
+                     
+                    <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>">
+                     
+                          <%= child_link.title %></a>
+                  </li>
+                  <% }) %>
+              </ul>
+              <% } %>
+          </li>
+          <% }) %>
+            <% } %>
+
+    </ul>
+    <div  class="c-header--assignBox">
+      <a  class="c-header--assign c-header__menuLi" href="#recruit">
+        <img class="c-header--Licon" src="/assets/img/header/note.svg" alt="募集要項">
+        <span class="c-header--Ltxt">募集要項</span>
+      </a>
+    </div>
+     
+  </div>
+
+
 </header>

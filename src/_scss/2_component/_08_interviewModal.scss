@@ -10,22 +10,54 @@
     overflow-y: auto;
     background-color: rgba(255, 255, 255, 0.7);
 
+   
+
+    @include tab {
+        padding: 59px 19px 0;
+        
+    }
+
     .c-interviewModal__content {
         background-color: $cl-white--1;
         margin: 0 auto;
-        padding: 42px 57px 99px;
+        padding: 42px 57px 98px;
         border: 4px solid $cl-blue--1;
         max-width: 960px;
-        position: relative;
+
+     
+        @include tab {
+            overflow-y: auto;
+            max-height: 100%;
+        }
+
+      
+       
+        @include tab {
+            padding: 32px 17px 99px;
+            max-width: 560px;
+            text-align: center;
+            
+        }
     }
 
     .c-interviewModal__main {
         display: flex;
+        @include tab {
+            display: block;
+         
+        }
     }
 
     .c-title {
         letter-spacing: 1.78px;
         margin-bottom: 30px;
+        @include tab {
+            font-size: 2rem !important;
+            letter-spacing: 1.08px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            text-align: left;
+        }
     }
 
     .c-closeInterview {
@@ -39,19 +71,35 @@
         background-color: $cl-blue--1;
         padding: 8px 22px;
         cursor: pointer;
-        position: absolute;
+ 
+        margin-top: 23px;
+        float: right;
         right: 5.9%;
         bottom: 3.8%;
+        @include tab {
+            position: unset;
+            margin: 2px auto 0;
+            float: unset;
+        
+        }
     }
 
     .c-interviewModal__R {
         width: 34.6%;
         margin-right: 40px;
+        @include tab {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 35px;
+        }
     }
 
     .c-interviewModal__L {
         width: calc(100% - 34.6% - 40px);
         color: $cl-gray--1;
+        @include tab {
+            width: 100%;
+        }
     }
 
     .c-interviewModal__banner {
@@ -63,30 +111,53 @@
     .c-interviewModal__name {
         font-size: 2.4rem;
         letter-spacing: 0.58px;
+        @include tab {
+            letter-spacing: 1.3px;
+           
+        }
     }
 
     .c-interviewModal__desc {
         font-size: 1.6rem;
         letter-spacing: 0.38px;
+    
     }
 
     .c-interview__dl {
         margin-bottom: 28px;
+        @include tab {
+            margin-bottom: 31px;
+            text-align: left;
+        }
     }
 
     .c-interview__dt {
         margin-bottom: 9px;
+        @include tab {
+            margin-bottom: 12px;
+        }
     }
 
     .c-interview__dtTxt {
         font-size: 1.8rem;
         letter-spacing: 0.43px;
         line-height: 1.1;
+        @include tab {
+            font-size: 1.6rem;
+            letter-spacing: 0.16px;
+            line-height: 1.56;
+        }
 
     }
 
     .c-interview__ddTxt {
         letter-spacing: 0.38px;
         line-height: 1.91;
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.34px;
+            line-height: 1.57;
+        }
     }
 }
+

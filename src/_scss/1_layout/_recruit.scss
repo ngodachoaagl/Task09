@@ -3,21 +3,37 @@
     @include tab {
         margin-top: 51px;
     }
+    @include sp {
+        margin-top: 32px;
+    }
 
     .c-recruit--main {
         @include tab {
             padding: 0 20px;
+        }
+        @include sp {
+            padding: 0 10px;
         }
     }
 
     .c-title {
         text-align: center;
         margin-bottom: 7px;
+        @include sp {
+            font-size: 2.4rem !important;
+            letter-spacing: 1.3px;
+            margin-bottom: 10px;
+        }
     }
 
     .c-cap {
         text-align: center;
         line-height: 1.73;
+        @include sp {
+            font-size: 1.4rem;
+            letter-spacing: 0.34px;
+            line-height: 1.57;
+        }
     }
 
     .c-recruit--body {
@@ -25,6 +41,9 @@
         margin: 56px auto 0;
         @include tab {
             margin: 32px auto 0;
+        }
+        @include sp {
+            margin: 36px auto 0;
         }
     }
 
@@ -36,7 +55,9 @@
         display: flex;
         border-bottom: 1px solid #707070;
         line-height: 1.9;
-
+        @include sp {
+            flex-wrap: wrap;
+        }
     }
 
     th {
@@ -53,6 +74,12 @@
             padding-left: 20px;
             line-height: 1.9;
             width: 25.4%;
+        }
+        @include sp {
+            width: 100%;
+            padding-left: 10px;
+            letter-spacing: 0.16px;
+            margin-bottom: 8px;
         }
      
     }
@@ -71,12 +98,21 @@
             width: 73%;
             padding-right: 10px;
         }
+        @include sp {
+            width: 100%;
+            padding-left: 10px;
+            letter-spacing: 0.14px;
+            line-height: 1.785;
+        }
       
     }
 
     .c-table__tr1 {
         border-bottom: 5px solid $cl-blue--1;
         padding-bottom: 14px;
+        @include sp {
+            padding-bottom: 11px;
+        }
        
     }
     
@@ -92,9 +128,16 @@
         }
     }
 
+    tr.c-table__tr2{
+  
+    }
+
     tr.c-table__tr5 {
         @include tab {
             padding-bottom: 12px;
+        }
+        @include sp {
+            padding-bottom: 16px;
         }
  
       
@@ -105,6 +148,9 @@
         @include tab {
             padding-bottom: 8px;
         }
+        @include sp {
+            padding-bottom: 16px;
+        }
     }
  
 
@@ -114,6 +160,10 @@
         @include tab {
             padding-bottom: 14.2px; 
         }
+        @include sp {
+            padding-bottom: 16px;
+        }
+      
    
     }
 
@@ -121,6 +171,11 @@
         display: flex;
         justify-content: center;
         margin-top: 41px;
+        @include sp {
+            flex-wrap: wrap;
+            margin: 38px auto 0;
+            max-width: 340px;
+        }
     }
 
     .c-tab__btn {
@@ -139,6 +194,13 @@
             width: 301px;
             padding: 12px 14px;
         }
+        @include sp {
+            width: 89%;
+            padding: 11.5px 17px;
+            font-size: 1.8rem;
+            justify-content: unset;
+            letter-spacing: 0.43px;
+        }
         
     }
 
@@ -146,6 +208,10 @@
         height: 30px;
         @include tab {
             height: 26px;
+        }
+        @include sp {
+            height: 23px;
+            width: 22px;
         }
       
     }
@@ -155,11 +221,19 @@
         @include tab {
             margin-right: 20px;
         }
+        @include sp {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
 
         .c-tab__btnIcon {
             transform: translate(-11px, 2px);
             @include tab {
                 transform: translate(2px, 2px);
+            }
+            @include sp {
+                transform: translate(3px, 2px);
+                margin-right: 19%;
             }
         }
 
@@ -176,6 +250,10 @@
             @include tab {
                 transform: translate(-1px, 2px);
             }
+            @include sp {
+                transform: translate(3px, 2px);
+                margin-right: 9%;
+            }
         }
 
         .c-tab__btnTxt {
@@ -183,6 +261,7 @@
             @include tab {
                 transform: translate(-3px, 0);
             }
+                   
         }
     }
     
