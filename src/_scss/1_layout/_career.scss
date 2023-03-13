@@ -1,48 +1,58 @@
 .c-career {
     margin-top: 93px;
+
     @include tab {
-        margin-top: 54px;
-      
+        margin-top: 53px;
+
     }
+
     @include sp {
         margin-top: 36px;
-       
+
     }
 
     .c-career__header {
         text-align: center;
         margin-bottom: 101px;
+
         @include tab {
-            margin-bottom: 34px;
-           
+            margin-bottom: 31px;
+
         }
+
         @include sp {
             padding: 0 20px;
             text-align: left;
+            margin-bottom: 34px;
         }
 
-        .c-title {
-            margin-bottom: 19px;
+        .c-title1 {
+            margin-bottom: 17px;
+
             @include tab {
                 font-size: 2.6rem;
                 letter-spacing: 1.38px;
                 line-height: 1.63;
-                margin-bottom: 26px;
+                margin-bottom: 25px;
             }
+
             @include sp {
                 font-size: 2.4rem;
                 letter-spacing: 1.3px;
                 line-height: 1.23;
-                margin-bottom: 15px;
+                margin-bottom: 14px;
             }
         }
 
         .c-cap {
-            line-height: 1.73;
+            line-height: 1.75;
+
             @include tab {
                 font-size: 1.4rem;
                 letter-spacing: 0.34px;
+                line-height: 1.786;
             }
+
             @include sp {
                 line-height: 1.57;
             }
@@ -51,6 +61,7 @@
 
     .c-career__banner {
         position: relative;
+
         @include sp {
             position: unset;
         }
@@ -70,13 +81,16 @@
         top: 49%;
         left: 30.3%;
         transform: translate(-50%, -50%);
-        padding: 37px 25px 30px 40px;
+        padding: 37px 25px 31px 41px;
+
         @include tab {
             top: 49.5%;
             left: 27.6%;
             width: 383px;
-            padding: 36px 28px 32px 40px;
+            padding: 36px 28px 34px 40px;
+     
         }
+
         @include sp {
             position: unset;
             transform: translate(0);
@@ -86,29 +100,38 @@
             margin-bottom: 34px;
         }
 
-        .c-title {
+        .c-title1 {
             letter-spacing: 0.62px;
-            line-height: 1.4;
+            line-height: 1.32;
             margin-bottom: 12px;
+            padding-right: 20px;
             @include tab {
                 font-size: 3rem;
                 letter-spacing: 1.62px;
+                line-height: 1.466;
+                margin-bottom: 10px;
+                padding-right: unset;
             }
+
             @include sp {
                 font-size: 2.4rem;
                 letter-spacing: 1.3px;
                 padding-right: 40px;
                 line-height: 1.23;
+                margin-bottom: 12px;
             }
         }
 
         .c-cap {
-            line-height: 1.85;
+            line-height: 1.88;
+            font-weight: 400;
+
             @include tab {
                 font-size: 1.4rem;
                 letter-spacing: 0.34px;
-                line-height: 1.8;
+                line-height: 1.786;
             }
+
             @include sp {
                 line-height: 1.58;
             }
@@ -117,9 +140,11 @@
 
     .c-career__body {
         margin-top: 74px;
+
         @include tab {
             margin-top: 0;
         }
+
         @include sp {
             padding-right: 10px;
         }
@@ -127,31 +152,35 @@
 
     .c-career__bodyT {
         background-color: $cl-gray--2;
-        padding: 93px 65px 111px 120px;
+        padding: 92px 65px 113px 120px;
         width: 921px;
         margin-right: auto;
+
         @include tab {
             width: 668px;
-            padding: 52px 34px 66px 41px;
+            padding: 52px 34px 67px 41px;
         }
+
         @include sp {
             width: unset;
-          
-            padding: 50px 5px 55px 20px;
-            margin-bottom: 30px;
+
+            padding: 49px 5px 55px 20px;
+            margin-bottom: 31px;
 
         }
 
-        .c-title {
-            letter-spacing: 0.65px;
+        .c-title1 {
+            letter-spacing: 0.82px;
+
             @include tab {
                 font-size: 3rem;
                 letter-spacing: 1.62px;
             }
+
             @include sp {
                 font-size: 2.4rem;
                 letter-spacing: 1.3px;
-                line-height: 1.58px;
+                line-height: 1.58;
             }
         }
     }
@@ -160,20 +189,33 @@
         margin-top: 42px;
         padding-left: 40px;
         margin-bottom: 43px;
+
         @include tab {
             margin-top: 19px;
-            margin-bottom: 61px;
+            margin-bottom: 55px;
         }
+
         @include sp {
             margin-top: 42px;
             padding-left: 10px;
-            margin-bottom: 23px;
+            margin-bottom: 21px;
         }
     }
 
     .c-career__hist {
         &:not(:last-of-type) {
             margin-bottom: 17px;
+        }
+
+        &:nth-of-type(2) {
+            .c-career__histTitle {
+                margin-bottom: 9px;
+
+            }
+        }
+
+        &:nth-of-type(3) {
+            margin-bottom: 20px;
         }
 
         @include tab {
@@ -191,6 +233,7 @@
                 }
             }
         }
+
         @include sp {
             &:not(:first-of-type) {
                 .c-career__histTitle {
@@ -207,15 +250,16 @@
                 .c-career__histTitle {
                     margin-bottom: 12px;
                 }
+
                 margin-bottom: 12px;
-                
+
             }
 
             &:nth-of-type(4) {
                 .c-career__histDesc {
                     br:nth-of-type(2) {
                         display: none;
-                     
+
                     }
 
                     span {
@@ -223,7 +267,7 @@
                         margin-top: 11px;
                     }
                 }
-                
+
             }
         }
     }
@@ -234,9 +278,12 @@
         color: $cl-blue--1;
         font-weight: 600;
         margin-bottom: 15px;
+        line-height: 1.52;
+
         @include tab {
             margin-bottom: 9px;
         }
+
         @include sp {
             font-size: 1.8rem;
             letter-spacing: 0.97px;
@@ -251,9 +298,11 @@
         padding-left: 87px;
         padding-top: 12px;
         padding-bottom: 15px;
+
         @include tab {
             padding-left: 40px;
         }
+
         @include sp {
             padding-left: 28px;
             margin-left: 30px;
@@ -267,6 +316,7 @@
         color: $cl-blue--1;
         letter-spacing: 0.38px;
         line-height: 1.73;
+
         @include sp {
             font-size: 1.4rem;
             letter-spacing: 0.34px;
@@ -277,6 +327,7 @@
     .c-career__bodyB {
         padding-left: 93px;
         position: relative;
+
         @include sp {
             padding: 0;
         }
@@ -286,12 +337,14 @@
             letter-spacing: 0.6px;
             font-weight: 600;
             transform: translate(-9px, -1px);
+
             @include tab {
                 font-size: 2.1rem !important;
                 letter-spacing: 0.5px;
                 line-height: 1.8;
                 transform: translate(-9px, -5px);
             }
+
             @include sp {
                 font-size: 1.8rem !important;
                 letter-spacing: 0.11px;
@@ -304,15 +357,17 @@
 
     .c-career__footer {
         .c-box__R {
-            // padding: 8.5% 10px 5% 3.5%;
+     
             background-color: #fdfbef;
             max-height: 1109px;
+            padding-right: 10px;
             @include tab {
                 max-height: 1014px;
-                // padding: 7.3% 19px 1.3% 2.4%;
+                padding-right: unset;
             }
+
             @include sp {
-                // padding: 9.4% 19px 1.3% 2.6%;
+                padding-right: unset;
             }
         }
 
@@ -320,14 +375,16 @@
             picture:first-of-type {
                 img {
                     width: 100%;
-                    max-height: 236px;
+                 
+
                     @include tab {
                         max-height: 245px;
                     }
+
                     @include sp {
-                       
+
                         max-height: unset;
-                        
+
                     }
                 }
             }
@@ -346,11 +403,11 @@
                 }
 
                 img {
-                 
+
                     @include sp {
                         width: 100%;
                         max-height: unset;
-                  
+
                     }
                 }
             }
@@ -360,5 +417,5 @@
     .c-box__ddEnd {
         margin-bottom: 2px;
     }
-    
+
 }

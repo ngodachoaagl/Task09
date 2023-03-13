@@ -1,20 +1,21 @@
 .c-interview {
-    margin-top: 92px;
+    margin-top: 90px;
     @include tab {
         margin-top: 51px;
     }
     @include sp {
-        margin-top: 36px;
+        margin-top: 32px;
     }
 
     .c-interview--main {
-        .c-title,
+        .c-title1,
         .c-cap {
             text-align: center;
         }
 
-        .c-title {
-            margin-bottom: 5px;
+        .c-title1 {
+            margin-bottom: 3px;
+            letter-spacing: 3.26px;
             @include tab {
                 font-size: 3rem !important;
                 letter-spacing: 1.62px;
@@ -23,12 +24,12 @@
             @include sp {
                 font-size: 2.4rem !important;
                 letter-spacing: 1.3px;
-                margin-bottom: 10px;
+                margin-bottom: 11px;
             }
         }
 
         .c-cap {
-            line-height: 1.73;
+            line-height: 1.75;
             @include tab {
                 font-size: 1.4rem;
                 letter-spacing: 0.34px;
@@ -42,7 +43,7 @@
 
     .c-interview--header {
         max-width: 960px;
-        margin: 50px auto 0;
+        margin: 52px auto 0;
         @include tab {
             max-width: 768px;
             margin: 32px auto 0;
@@ -50,7 +51,7 @@
         }
         @include sp {
             max-width: 375px;
-            margin: 35px auto 0;
+            margin: 34px auto 0;
         }
     }
 
@@ -58,7 +59,7 @@
         margin-top: 142px;
         background-color: $cl-blue--1;
 
-        padding: 93px 30px 69px;
+        padding: 92px 30px 69px;
         color: $cl-white--1;
         @include tab {
             margin-top: 109px;
@@ -66,7 +67,7 @@
         }
         @include sp {
             margin-top: 19px;
-            padding: 55px 20px 1px;
+            padding: 54px 20px 2px;
         }
 
         .c-interview__exBox {
@@ -74,12 +75,14 @@
             margin: 0 auto;
         }
 
-        .c-title {
+        .c-title1 {
+            color: $cl-white--1;
             text-align: left;
             margin-bottom: 37px;
+            letter-spacing: 2.52px;
             @include tab {
                 font-size: 3.4rem !important;
-                letter-spacing: 2.52px;
+              
                 margin-bottom: 22px;
             }
             @include sp {
@@ -99,7 +102,7 @@
 
         h4.c-title {
             letter-spacing: 0.58px;
-            line-height: 1.93;
+            line-height: 1.92;
             margin-bottom: 22px;
             @include tab {
                 font-size: 2rem !important;
@@ -149,13 +152,13 @@
             color: $cl-white--1;
             font-weight: 500;
             letter-spacing: 0.58px;
-            margin-bottom: 26px;
+            margin-bottom: 27px;
             @include tab {
                 letter-spacing: 0.98px;
                 margin-bottom: 27px;
             }
             @include sp {
-                margin-bottom: 30px;
+                margin-bottom: 32px;
             }
         }
 
@@ -172,7 +175,16 @@
                 letter-spacing: 0.34px;
                 line-height: 1.57;
                 padding-right: 0;
-                margin-bottom: 32.5px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    .c-interview--bodyR {
+        img {
+            transform: translateY(1px);
+            @include tab {
+                transform: translate(0);
             }
         }
     }
@@ -206,7 +218,7 @@
     }
 
     .c-interview__company {
-        margin-top: 47px;
+        margin-top: 46px;
         font-size: 3.4rem;
         font-weight: 500;
         letter-spacing: 2.52px;
@@ -219,16 +231,17 @@
     }
 
     .c-interview--footer {
-        padding: 43px 30px 50px 40px;
+        padding: 44px 30px 51px 40px;
         display: flex;
         @include tab {
             padding: 0;
 
             max-width: 768px;
-            margin: 24px auto 0;
+            margin: 25px auto 0;
         }
         @include sp {
             display: block;
+            max-width: 335px;
         }
     }
 
@@ -259,9 +272,11 @@
             transform: translate(-5px, 1px);
             @include tab {
                 transform: translate(0, 1.5px);
+                width: 201px;
             }
             @include sp {
                 transform: scale(50%);
+                width: unset;
             }
         }
     }
@@ -269,6 +284,7 @@
     .c-interview--hastag {
         width: calc(100% - 308px - 50px);
         padding-left: 17px;
+        font-weight: 500;
         @include tab {
             padding-left: 0;
             width: calc(100% - 247px - 41px);
@@ -317,6 +333,7 @@
             font-size: 2rem;
             letter-spacing: 0.48px;
             width: 25%;
+            height: fit-content;
         }
 
         &::after {
@@ -336,8 +353,9 @@
             }
             @include sp {
                 width: 17px;
-                right: 7%;
-                top: 51.5%;
+                left: 69%;
+                top: 67.5%;
+
             }
         }
     }

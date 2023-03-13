@@ -6,6 +6,23 @@
     z-index: 9;
     width: 100%;
 
+    .c-nav__item.is-active {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            bottom: -6px;
+            left: 0;
+            background-color: $cl-blue--1;
+            @include tab {
+                bottom: -8px;
+            }
+        }
+    }
+
     .c-header--main {
         z-index: 10;
         position: relative;
@@ -110,6 +127,7 @@
             .c-header--Ltxt {
                 font-size: 1.8rem;
                 letter-spacing: 2.23px;
+                font-weight: 500;
                 @include tab {
                     font-size: 1.6rem;
                     letter-spacing: 1.98px;
@@ -131,7 +149,7 @@
         }
     }
 
-    .l-tablet--only {
+    .u-tablet--only {
         ul {
             display: flex;
             padding: 7px 40px;
@@ -157,8 +175,6 @@
         background-color: rgba(255, 255, 255, 0.95);
         overflow-y: auto;
       
-        // padding-left: 18px;
-        // padding-right: 20px;
         padding-bottom: 50px;
 
         img {
@@ -175,7 +191,7 @@
          
         }
 
-        a {
+        a:not(.c-header--assign) {
             display: inline-block;
             width: 100%;
             color: $cl-blue--1;
@@ -225,4 +241,5 @@
         }
     }
 
+   
 }

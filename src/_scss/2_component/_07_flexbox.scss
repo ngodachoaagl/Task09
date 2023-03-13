@@ -12,6 +12,7 @@
     .c-flexbox__item {
         width: 32.7%;
         position: relative;
+        cursor: pointer;
         @include sp {
             width: 100%;
             display: flex;
@@ -40,7 +41,7 @@
             border: 4px solid $cl-blue--1;
             width: 97.4%;
             height: 98.4%;
-            z-index: 1;
+            z-index: 3;
             @include tab {
                 width: 96.4%;
                 height: 103.9%;
@@ -54,6 +55,11 @@
             }
         }
 
+        &:hover::before {
+            border-color: #005384;
+           
+        }
+
         &:not(:last-of-type) {
             margin-right: 9px;
             @include tab {
@@ -64,10 +70,8 @@
             }
         }
 
-        &:hover .c-flexbox__border,
-        &:hover .c-flexbox__desc {
-            border-color: #005384;
-        }
+      
+       
 
         &:hover .c-flexbox__bannerMain {
             background-color: #005384;
@@ -79,7 +83,10 @@
 
         &:hover .c-flexbox__overlay {
             opacity: 1;
+     
         }
+
+       
     }
 
     
@@ -125,17 +132,17 @@
         padding-left: 10px;
         padding-right: 10px;
         width: 100%;
-        z-index: 2;
+        z-index: 5;
         @include tab {
-            top: 95.6%;
-            padding-left: 20px;
-            padding-right: 20px;
+            top: 95.7%;
+            padding-left: 19.5px;
+            padding-right: 19.5px;
         }
         @include sp {
             top: 85%;
             padding-left: 28px;
             padding-right: 27px;
-            z-index: 4;
+     
         }
     }
 
@@ -145,10 +152,10 @@
         min-height: 100%;
         background-color: $cl-blue--1;
         display: flex;
-        padding: 14px 21px;
+        padding: 14px 19px;
         align-items: center;
         @include tab {
-            padding: 13px 15px;
+            padding: 11px 15px 13px;
         }
         @include sp {
             padding: 9px 23px;
@@ -156,31 +163,28 @@
     }
 
     .c-flexbox__bannerIcon {
-        background-color: $cl-white--1;
-        color: $cl-blue--1;
-        min-width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        text-align: center;
+      
+        
         margin-right: 18px;
-        line-height: 0.9;
+ 
         @include tab {
-            min-width: 16px;
-            height: 16px;
-            line-height: 0.8;
-            margin-right: 15px;
+            width: 19px;
+            margin-right: 12px;
+            transform: translate(-2px, 4px);
         }
         @include sp {
-            margin-right: 21px;
+     
+            margin-right: 18px;
+                
+            transform: translate(-1px, 3px);
         }
 
-        i {
-            font-size: 0.6rem;
-            transform: translateX(1px);
-        }
+      
     }
 
     .c-flexbox__bannerDesc {
+        font-size: 1.4rem;
+        font-weight: 400;
         @include tab {
             font-size: 1.2rem;
         }
@@ -192,12 +196,17 @@
     .c-flexbox__bannerName {
         font-size: 2rem;
         letter-spacing: 0.48px;
+        font-weight: 400;
+        margin-bottom: 3px;
         @include tab {
             font-size: 1.4rem;
+            
+            margin-bottom: 2px;
         }
         @include sp {
             font-size: 1.6rem;
             letter-spacing: 0.38px;
+            margin-bottom: 0;
         }
     }
 
@@ -210,12 +219,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        border-right: 4px solid #005384;
-        border-left: 4px solid #005384;
-        border-top: 4px solid #005384;
-        z-index: 3;
+       
+        z-index: 1;
         @include sp {
-            border: 2px solid #005384;
+          
             height: 100%;
         }
     }

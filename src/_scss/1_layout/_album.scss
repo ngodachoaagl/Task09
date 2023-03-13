@@ -1,7 +1,7 @@
 .c-album {
     margin-top: 89px;
     @include tab {
-        margin-top: 43px;
+        margin-top: 41px;
     }
     @include sp {
       
@@ -14,9 +14,9 @@
         text-align: center;
     }
 
-    .c-title {
+    .c-title1 {
         letter-spacing: 1.82px;
-        margin-bottom: 13px;
+        margin-bottom: 12px;
         @include tab {
             margin-bottom: 7px;
         }
@@ -28,6 +28,9 @@
     }
 
     .c-cap {
+        @include tab {
+           
+        }
         @include sp {
             font-size: 1.4rem;
             letter-spacing: 0.34px;
@@ -37,7 +40,7 @@
 
     .c-album__body {
         width: 880px;
-        margin: 35px auto 0;
+        margin: 36px auto 0;
         max-width: 880px;
         border: 1px solid $cl-blue--1;
         padding: 39px 40px;
@@ -46,10 +49,11 @@
         @include tab {
             width: unset;
             max-width: 730px;
-            margin: 36px auto 0;
+            margin: 37px auto 0;
             padding: 19px 20px 13px;
         }
         @include sp {
+            margin: 36px auto 0;
             flex-wrap: wrap;
             max-height: unset;
             padding: 9px 9px 0;
@@ -150,6 +154,7 @@
             position: absolute;
             top: 63%;
             left: 50%;
+            color: #005384 !important;
             transform: translate(-50%, -50%);
             cursor: pointer;
 

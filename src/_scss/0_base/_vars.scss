@@ -18,3 +18,9 @@ $cl-blue--1: #0080cc;
 
 
 $cl-orange--1: #ff5800;
+
+@keyframes fade {
+    0% {transform: scale(0%);}
+  
+    100% {transform: scale(100%);}
+}

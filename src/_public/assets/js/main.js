@@ -35,7 +35,7 @@ btnClose.onclick = function () {
 
 
 let interViewModal = document.getElementById("interviewModal");
-let btnInterview = document.getElementsByClassName("c-flexbox__overlayC");
+let btnInterview = document.getElementsByClassName("c-flexbox__target");
 let btnCloseInterview = document.getElementsByClassName("c-closeInterview")[0];
 for (let item of btnInterview) {
     item.addEventListener('click', function (e) {
@@ -137,10 +137,12 @@ navbarBtn.addEventListener('click',function(){
         this.classList.add('is-active')
         this.src = '/assets/img/header/closemenu.svg' 
         headerMenu.style.display = 'block';
+           document.body.style.overflow = "hidden";
     }else{
         this.classList.remove('is-active')
         this.src = '/assets/img/header/bar.svg' 
         headerMenu.style.display = 'none';
+              document.body.style.overflow = "unset";
     }
    
 })
@@ -150,6 +152,36 @@ for(let li of listMenuLi){
     li.addEventListener('click',function(){
         headerMenu.style.display = 'none';
         navbarBtn.src = '/assets/img/header/bar.svg' 
-    
+    navbarBtn.classList.remove('is-active')
+     document.body.style.overflow = "unset";
     })
 }
+
+
+
+
+let section = document.querySelectorAll("section");
+let listsLink = document.querySelectorAll(".c-nav__item");
+listsLink[0].classList.add("is-active");
+window.onscroll = function () {
+ 
+
+  section.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop;
+
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
+
+    if (top >= offset -1000  && top <= offset + height) {
+      listsLink.forEach((item) => {
+        item.classList.remove("is-active");
+
+        if (item.querySelector("a").getAttribute("href").trim() == "#" + id) {
+          item.classList.add("is-active");
+        }
+      });
+    }
+  
+  });
+};

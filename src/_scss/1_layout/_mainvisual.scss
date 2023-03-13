@@ -16,6 +16,9 @@
         height: 770px;
         overflow: hidden;
         position: relative;
+        @media screen and (min-width: 1201px) {
+            height: 77vh;
+        }
         @include tab {
             height: 788px;
         }
@@ -86,11 +89,16 @@
         transform: translate(-50%, -50%);
         z-index: 2;
         @include tab {
-            top: 53.6%;
+            top: 53.9%;
+           
+            left: 27.4%;
         }
         @include sp {
-            top: 48.7%;
-            left: 35.5%;
+
+            top: 49.1%;
+
+            left: 13.5%;
+            transform: translate(-15%, -50%);
 
         }
 
@@ -141,7 +149,7 @@
             width: 90%;
         }
         @include sp {
-            height: 79px;
+            height: 73px;
             width: 94.5%;
             padding: 0 39px;
             text-align: center;
@@ -163,6 +171,7 @@
             font-size: 1.8rem;
             letter-spacing: 0.36px;
             line-height: unset;
+            transform: translateY(3px);
         }
     }
 
@@ -181,7 +190,7 @@
         @include sp {
             font-size: 1.6rem;
             letter-spacing: 0.38px;
-            top: -41%;
+            top: -45%;
             left: 50.1%;
         }
 

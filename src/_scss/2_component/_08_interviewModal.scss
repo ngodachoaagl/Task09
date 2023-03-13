@@ -10,7 +10,8 @@
     overflow-y: auto;
     background-color: rgba(255, 255, 255, 0.7);
 
-   
+    animation-name: fade;
+    animation-duration: 0.1s;
 
     @include tab {
         padding: 59px 19px 0;
@@ -51,6 +52,7 @@
     .c-title {
         letter-spacing: 1.78px;
         margin-bottom: 30px;
+        font-weight: 600;
         @include tab {
             font-size: 2rem !important;
             letter-spacing: 1.08px;
@@ -142,6 +144,7 @@
         font-size: 1.8rem;
         letter-spacing: 0.43px;
         line-height: 1.1;
+        font-weight: 600;
         @include tab {
             font-size: 1.6rem;
             letter-spacing: 0.16px;
@@ -153,6 +156,7 @@
     .c-interview__ddTxt {
         letter-spacing: 0.38px;
         line-height: 1.91;
+        color: #0b0b0b;
         @include tab {
             font-size: 1.4rem;
             letter-spacing: 0.34px;

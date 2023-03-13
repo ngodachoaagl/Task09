@@ -1,5 +1,5 @@
 
-.c-career__servicetitletop {
+.c-career__svcTitleT { //.c-career__servicetitletop
     font-size: 2.8rem;
     font-weight: 500;
     letter-spacing: 0.7px;
@@ -8,8 +8,9 @@
     color: $cl-orange--1;
     @include tab {
         letter-spacing: 0;
-        margin-top: 56px;
+        margin-top: 55px;
         margin-bottom: 5px;
+        letter-spacing: 0.67px;
     }
     @include sp {
         font-size: 2.2rem;
@@ -19,7 +20,7 @@
     }
 }
 
-.c-career__servicetitlebottom {
+.c-career__svcTitleB {
     font-size: 2.8rem;
     font-weight: 500;
     color: $cl-orange--1;
@@ -38,7 +39,7 @@
     }
 }
 
-.c-career__servicedescriptionitemtitle {
+.c-career__svcdescit { //servicedescriptionitemtitle
     font-size: 1.8rem;
     font-weight: 500;
     color: $cl-gray--1;
@@ -54,7 +55,7 @@
     }
 }
 
-.c-career__servicedescriptionitemsubtitle {
+.c-career__svcdescist { //servicedescriptionitemsubtitle
     font-size: 1.6rem;
     font-weight: 300;
     color: $cl-gray--1;
@@ -69,14 +70,14 @@
     }
 }
 
-.c-career__servicedescription {
+.c-career__svcdesc { //servicedescription
     margin-left: 40px;
     @include tab {
         margin-left: 21px;
         padding-right: 27px;
     }
     @include sp {
-        padding-bottom: 30px;
+        padding-bottom: 34px;
     }
 
     dt {

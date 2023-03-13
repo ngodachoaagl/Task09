@@ -7,11 +7,14 @@
     }
 
     .c-footer--main {
-        height: 80px;
+       
         display: flex;
         align-items: center;
-        padding: 0 21px;
+        padding: 2px 20px;
+        border-bottom: 1px solid #efefef;
         @include tab {
+            padding: 10px 21px;
+            border-bottom: unset;
             justify-content: space-between;
         }
         @include sp {
@@ -21,7 +24,7 @@
         }
 
         .c-footer__logo {
-            padding: 12px 0 0;
+           
 
             margin-right: 130px;
             position: relative;
@@ -55,7 +58,7 @@
         }
 
         .c-footer__nav {
-            padding: 42px 0 30px;
+            padding: 31px 0 32px;
             width: 638px;
             margin-right: 44px;
 
@@ -67,13 +70,21 @@
             li {
                 color: $cl-blue--1;
                 letter-spacing: 0.32px;
+
+                &:not(:last-of-type) {
+                    margin-right: 20px;
+                }
+                @include tab {
+                    margin-right: unset;
+                }
             }
         }
 
         .c-footer__left {
-            padding-top: 7px;
+            transform: translateY(-2px);
             @include tab {
                 padding-top: 17px;
+                transform: translateY(0);
             }
 
             .c-footer--assign {
@@ -82,7 +93,12 @@
                 border-radius: 9px;
                 white-space: nowrap;
                 color: $cl-white--1;
+                font-weight: 500;
+                @include tab {
+                    padding: 14px 40px 15px 39px;
+                }
             }
+
 
             .c-footer--Licon {
                 width: 20px;
@@ -99,7 +115,7 @@
     .c-footer__breadcrumb {
         float: right;
         padding-right: 60px;
-        margin-top: 19px;
+        margin-top: 6px;
         @include tab {
             padding-right: 19px;
             margin-top: 9px;
@@ -127,8 +143,8 @@
     .c-footer__copyright {
         background-color: $cl-blue--1;
         text-align: center;
-        margin-top: 56px;
-        padding: 14px;
+        margin-top: 44px;
+        padding: 14px 14px 12px;
         @include tab {
             margin-top: 45px;
 
@@ -155,7 +171,7 @@
         }
     }
 
-    .l-tablet--only {
+    .u-tablet--only {
         ul {
             margin-top: 18px;
             display: flex;

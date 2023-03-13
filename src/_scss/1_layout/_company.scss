@@ -1,5 +1,5 @@
 .c-company {
-    margin-top: 91px;
+    margin-top: 89px;
     margin-bottom: 50px;
     @include tab {
         margin-top: 51px;
@@ -8,8 +8,9 @@
         margin-top: 33px;
     }
 
-    .c-title {
+    .c-title1 {
         text-align: center;
+        letter-spacing: 3.26px;
         @include sp {
             font-size: 2.4rem !important;
             letter-spacing: 1.3px;
@@ -18,7 +19,7 @@
 
     .c-company--body {
         max-width: 960px;
-        margin: 49px auto 0;
+        margin: 52px auto 0;
         @include tab {
             padding: 0 20px;
             margin: 25px auto 0;
@@ -37,7 +38,7 @@
     }
 
     tr {
-        // display: flex;
+     
 
         border: 1px solid #cbcbcb;
         border-bottom: none;
@@ -147,7 +148,7 @@
     }
 
     @include tab {
-        .l-tablet--only {
+        .u-tablet--only {
             display: table-row;
             @include sp {
                 display: flex;

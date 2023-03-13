@@ -18,7 +18,7 @@
         }
     }
 
-    .c-title {
+    .c-title1 {
         margin-bottom: 8px;
         @include tab {
             font-size: 3rem;
@@ -78,7 +78,7 @@
     .c-box__R {
         background-color: $cl-gray--7;
 
-        padding: 8.6% 2% 9% 3.7%;
+        padding: 8.5% 2% 9% 3.7%;
         max-height: 944px;
         @include tab {
             padding: 7.1% 2.7% 9%;
@@ -99,8 +99,8 @@
         }
     }
 
-    .c-box__Rheader > .c-title {
-        margin-bottom: 7px;
+    .c-box__Rheader > .c-title1 {
+        margin-bottom: 8px;
         @include tab {
             margin-bottom: 4px;
         }
@@ -146,6 +146,7 @@
             width: 90.4%;
             padding: 14px 20px 13px 19px;
             line-height: 1.55;
+            font-weight: 300 !important;
             @include tab {
                 letter-spacing: -1.76px !important;
                 padding: 9px 20px 11px 19px;

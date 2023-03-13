@@ -44,3 +44,37 @@
         display: none !important;
     }
 }
+
+.u-sp--only {
+    display: none;
+}
+
+.u-tablet--only {
+    display: none;
+}
+@include tab {
+    .u-pc--only {
+        display: none;
+    }
+
+    .u-tablet--only {
+        display: block;
+    }
+
+    .u-sp--only {
+        display: none;
+    }
+}
+@include sp {
+    .u-pc--only {
+        display: none;
+    }
+
+    .u-tablet--only {
+        display: none;
+    }
+
+    .u-sp--only {
+        display: block;
+    }
+}

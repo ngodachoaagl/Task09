@@ -8,11 +8,11 @@
 
 
     </a>
-    <div class="c-header__nav l-pc--only">
+    <div class="c-header__nav u-pc--only">
       <ul>
         <% if (typeof linklists !='undefined' ) { %>
           <% linklists.main && linklists.main.forEach(link=> { %>
-            <li>
+            <li class="c-nav__item">
               <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title
                       %>
               </a>
@@ -37,17 +37,17 @@
         <img class="c-header--Licon" src="/assets/img/header/note.svg" alt="募集要項">
         <span class="c-header--Ltxt">募集要項</span>
       </a>
-      <div class="c-header__bar l-sp--only">
-        <img id="navbarToggle" src="/assets/img/header/bar.svg" alt="">
+      <div class="c-header__bar u-sp--only">
+        <img id="navbarToggle" src="/assets/img/header/bar.svg" alt="bar">
       </div>
     </div>
 
   </div>
-  <div class="c-header__nav l-tablet--only">
+  <div class="c-header__nav u-tablet--only">
     <ul>
       <% if (typeof linklists !='undefined' ) { %>
         <% linklists.main && linklists.main.forEach(link=> { %>
-          <li>
+          <li class="c-nav__item">
             <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %>
             </a>
             <% if (link.links) { %>
@@ -72,7 +72,7 @@
       <% if (typeof linklists !='undefined' ) { %>
         <% linklists.main && linklists.main.forEach(link=> { %>
           <li class="c-header__menuLi">
-            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><img src="/assets/img/header/play-icon.svg" alt="123"><span><%= link.title %></span>
+            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><img src="/assets/img/header/play-icon.svg" alt="play"><span><%= link.title %></span>
             </a>
             <% if (link.links) { %>
               <ul>

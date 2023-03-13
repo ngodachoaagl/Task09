@@ -48,8 +48,8 @@
         }
     }
 
-    .c-title {
- 
+    .c-title1 {
+        color: #fff;
         margin-bottom: 24px;
         @include tab {
             font-size: 3rem;
@@ -169,7 +169,7 @@
             top: -2px;
             left: -4px;
             @include sp {
-                width: 100%;
+                width: 98.7%;
                 height: 98%;
             }
         }
@@ -181,16 +181,30 @@
             }
             @include sp {
                 margin-bottom: 29px;
+                transform: translateX(-1px);
             }
         }
-        @include sp {
+
+        &:last-of-type {
+                   
+        
+            @include sp {
+                        
+                transform: translateX(-4px);
+
+                &::after {
+                    left: -1px;
+                    width: 98.7%;
+                }
+            }
+        }        @include sp {
             max-width: 335px;
           
             margin: 0 auto;
         }
 
         .c-about__img {
-            transform: translate(3.2%, -6%);
+            transform: translate(2.9%, -5.9%);
             @include tab {
                 transform: translate(4.2%, -6%);
 

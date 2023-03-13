@@ -7,39 +7,6 @@
 @import "0_base/reset";
 @import "0_base/mixin";
 
-.l-sp--only {
-    display: none;
-}
-
-.l-tablet--only {
-    display: none;
-}
-@include tab {
-    .l-pc--only {
-        display: none;
-    }
-
-    .l-tablet--only {
-        display: block;
-    }
-
-    .l-sp--only {
-        display: none;
-    }
-}
-@include sp {
-    .l-pc--only {
-        display: none;
-    }
-
-    .l-tablet--only {
-        display: none;
-    }
-
-    .l-sp--only {
-        display: block;
-    }
-}
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Layout .l-
