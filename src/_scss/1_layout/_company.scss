@@ -1,11 +1,11 @@
 .c-company {
-    margin-top: 89px;
+    padding-top: 89px;
     margin-bottom: 50px;
     @include tab {
-        margin-top: 51px;
+        padding-top: 51px;
     }
     @include sp {
-        margin-top: 33px;
+        padding-top: 33px;
     }
 
     .c-title1 {

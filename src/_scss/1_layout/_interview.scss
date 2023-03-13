@@ -1,10 +1,10 @@
 .c-interview {
-    margin-top: 90px;
+    padding-top: 90px;
     @include tab {
-        margin-top: 51px;
+        padding-top: 51px;
     }
     @include sp {
-        margin-top: 32px;
+        padding-top: 32px;
     }
 
     .c-interview--main {

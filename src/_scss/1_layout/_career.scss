@@ -1,13 +1,13 @@
 .c-career {
-    margin-top: 93px;
+    padding-top: 93px;
 
     @include tab {
-        margin-top: 53px;
+        padding-top: 53px;
 
     }
 
     @include sp {
-        margin-top: 36px;
+        padding-top: 36px;
 
     }
 

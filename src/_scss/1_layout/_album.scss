@@ -150,21 +150,22 @@
         .c-album__pick {
             font-size: 1.8rem;
             letter-spacing: 0.43px;
-            font-weight: 500;
+           
             position: absolute;
             top: 63%;
             left: 50%;
             color: #005384 !important;
+            font-weight: 600;
             transform: translate(-50%, -50%);
             cursor: pointer;
-
+white-space: nowrap;
             &::after {
                 position: absolute;
                 font-family: "Font Awesome 5 Free";
                 content: "\f00e";
                 font-weight: 700;
                 font-size: 2.3rem;
-                color: $cl-blue--1;
+                color:  #005384 !important;
                 top: -52%;
                 left: 49.7%;
                 transform: translate(-50%, -50%);

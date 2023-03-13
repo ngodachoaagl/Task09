@@ -185,3 +185,9 @@ window.onscroll = function () {
   
   });
 };
+
+
+let listSection = document.querySelectorAll('section');
+for(let sec of listSection){
+    sec.scroll(0,1000)
+}
