@@ -22,6 +22,7 @@
         picture {
             @include sp {
                 width: 84.5%;
+                    max-width: 142px;
             }
         }
 
@@ -85,8 +86,29 @@
             opacity: 1;
      
         }
-
-       
+&:first-of-type{
+    .c-flexbox__desc{
+        span{
+            transform: translate(1px,-12px);
+        }
+    }
+}
+   &:nth-of-type(2){
+    .c-flexbox__desc{
+        span{
+            transform: translate(-1px,-5px);
+        }
+    }
+    
+}    
+  &:nth-of-type(3){
+    .c-flexbox__desc{
+        span{
+            transform: translate(-1px,-4px);
+        }
+    }
+    
+}   
     }
 
     
@@ -139,9 +161,10 @@
             padding-right: 19.5px;
         }
         @include sp {
-            top: 85%;
+            top: 99.5%;
             padding-left: 28px;
             padding-right: 27px;
+            transform: translateY(-50%);
      
         }
     }

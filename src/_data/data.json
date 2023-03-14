@@ -273,6 +273,7 @@
         "tabImg": "/assets/img/interview/modal1T.png",
         "spImg": "/assets/img/interview/modal1SP.png",
         "desc": "いつも明るく元気に作業。朝も一番に出勤してます！",
+          "descSP": "いつも明るく元気に作業。朝も一番に出勤してます！",
         "name": "安川　聖 (30)",
         "nameTab": "鈴木太郎",
         "bannerDescTab":"入社3年目・外構担当",
@@ -286,6 +287,7 @@
       
         "spImg": "/assets/img/interview/modal2SP.png",
         "desc": "職長として土木・外構工事の現場管理をしながら作業指示",
+        "descSP": "職長として<br>土木・外構工事の現場管理をしながら作業指示",
           "nameTab": "池田純一",
           "bannerDescTab": "入社5年目・外構担当",
         "name": "福元　和稔 (45)",
@@ -297,6 +299,7 @@
         "tabImg": "/assets/img/interview/modal3T.png",
         "spImg": "/assets/img/interview/modal3SP.png",
         "desc": "高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ",
+        "descSP": "高校卒業後に入社し、関西で妻と出会い結婚。<br>外構部長へ",
         "name": "工藤　智成(41)",
         "bannerDesc": "入社23年目・外構部長",
           "nameTab": "鈴木太郎",

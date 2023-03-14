@@ -34,7 +34,7 @@
       
        
         @include tab {
-           padding: 34px 19px 99px;
+            padding: 34px 19px 99px;
 
             max-width: 560px;
             text-align: center;
@@ -92,7 +92,10 @@
         margin-right: 40px;
         @include tab {
             width: 100%;
-            margin-right: 0;
+            width: 100%;
+            max-width: 295px;
+            margin-right: auto;
+            margin-left: auto;
             margin-bottom: 35px;
         }
     }

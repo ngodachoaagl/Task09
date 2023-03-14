@@ -1,10 +1,10 @@
 .c-recruit {
-    margin-top: 91px;
+    padding-top: 91px;
     @include tab {
-        margin-top: 51px;
+        padding-top: 51px;
     }
     @include sp {
-        margin-top: 32px;
+        padding-top: 32px;
     }
 
     .c-recruit--main {
@@ -114,6 +114,9 @@
         @include sp {
             padding-bottom: 11px;
         }
+        @include sp{
+               border-bottom: 3px solid $cl-blue--1;
+        }
        
     }
     
@@ -201,6 +204,7 @@
             font-size: 1.8rem;
             justify-content: unset;
             letter-spacing: 0.43px;
+            min-width: 282px;
         }
         
     }

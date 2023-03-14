@@ -42,7 +42,7 @@
         <ul>
             <% if (typeof linklists !='undefined' ) { %>
                 <% linklists.main && linklists.main.forEach(link=> { %>
-                    <li>
+                    <li class="c-nav__item">
                         <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%=
                                         link.title %>
                         </a>

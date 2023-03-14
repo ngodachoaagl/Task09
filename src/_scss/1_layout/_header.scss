@@ -31,9 +31,10 @@
         align-items: center;
         padding: 0 21px;
         background-color: #fff;
+            justify-content: space-between;
         @include tab {
             padding: 0 20px;
-            justify-content: space-between;
+           
             height: unset;
         }
         @include sp {
@@ -44,10 +45,12 @@
         .c-header__logo {
             padding: 15px 0 26px;
 
-            margin-right: 8.1%;
+             width: 14.2%;
+    margin-right: 4.3%;
             position: relative;
             @include tab {
                 padding: 20px 0 26px;
+                width: unset;
             }
             @include sp {
                 width: 123px;
@@ -73,8 +76,8 @@
 
         .c-header__nav {
             padding: 35px 0 30px;
-            width: 58.3%;
-            margin-right: 44px;
+              width: 58%;
+           
 
             ul {
                 display: flex;
@@ -86,12 +89,17 @@
                 letter-spacing: 0.32px;
 
                 &:not(:last-of-type) {
-                    margin-right: 20px;
+                    margin-right: 10px;
                 }
             }
         }
 
         .c-header__left {
+            &::after {
+                content: none !important;
+            }
+            
+            
             @include tab {
                 transform: translateY(-3px);
             }
@@ -113,6 +121,7 @@
                     margin-top: 3px;
                     padding: 7px 13px 7px 22px;
                     height: fit-content;
+                     border-radius: 10px;
                 }
             }
 
@@ -148,22 +157,28 @@
             }
         }
     }
+    
+  
 
-    .u-tablet--only {
-        ul {
-            display: flex;
-            padding: 7px 40px;
-            justify-content: space-between;
+
+    @include tab {
+        .u-tablet--only {
+            ul {
+                display: flex;
+                padding: 7px 40px;
+                justify-content: space-between;
+            }
+
+            a {
+                color: $cl-blue--1;
+                font-size: 1.6rem;
+                letter-spacing: 0.32px;
+              
+            }
         }
 
-        a {
-            color: $cl-blue--1;
-            font-size: 1.6rem;
-            letter-spacing: 0.32px;
-        }
+   
     }
-
-
 
     .c-header__menu {
         display: none;
@@ -191,6 +206,8 @@
          
         }
 
+   
+
         a:not(.c-header--assign) {
             display: inline-block;
             width: 100%;
@@ -199,6 +216,8 @@
             letter-spacing: 1.08px;
             line-height: 1.5;
             padding: 20px 18px;
+            // pointer-events: none;
+            cursor: pointer;
 
             &:hover {
                 background-color: #f5f5f5;
@@ -213,6 +232,7 @@
 
         .c-header--assignBox {
             text-align: center;
+            padding: 0 20px;
         }
 
         .c-header--assign {  width: 100%;

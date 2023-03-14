@@ -1,21 +1,13 @@
 import data from './itvModal.json'  assert {type: 'json'}
 
-window.addEventListener('scroll', scrollFade);
-function scrollFade() {
-    var box = document.querySelectorAll('.c-scrollBox');
-    for (let i = 0; i < box.length; i++) {
-        let windowHeight = window.innerHeight;
-        let boxTop = box[i].getBoundingClientRect().top;
-        var revealpoint = 150;
-        if (boxTop < windowHeight - revealpoint) {
-            box[i].classList.add('active');
-        } else {
-            box[i].classList.remove('active');
-        }
-    }
-}
 
-
+ScrollReveal({
+    reset: false,
+    distance: "100px",
+    duration: 2000,
+    origin: "bottom",
+});
+ScrollReveal().reveal('.c-scrollBox');
 
 let modal = document.getElementById("myModal");
 let btnPick = document.getElementsByClassName("c-album__pick");
@@ -105,7 +97,7 @@ ${dlContent}
 
 btnCloseInterview.onclick = function () {
     interViewModal.style.display = "none";
-    console.log(1);
+
 }
 window.onclick = function (event) {
     if (event.target == modal) {
@@ -132,28 +124,28 @@ function openTab(evt, tabNum) {
 }
 window.openTab = openTab;
 let navbarBtn = document.getElementById("navbarToggle");
-navbarBtn.addEventListener('click',function(){
-    if(!navbarBtn.classList.contains('is-active')){
+navbarBtn.addEventListener('click', function () {
+    if (!navbarBtn.classList.contains('is-active')) {
         this.classList.add('is-active')
-        this.src = '/assets/img/header/closemenu.svg' 
+        this.src = '/assets/img/header/closemenu.svg'
         headerMenu.style.display = 'block';
-           document.body.style.overflow = "hidden";
-    }else{
+        document.body.style.overflow = "hidden";
+    } else {
         this.classList.remove('is-active')
-        this.src = '/assets/img/header/bar.svg' 
+        this.src = '/assets/img/header/bar.svg'
         headerMenu.style.display = 'none';
-              document.body.style.overflow = "unset";
+        document.body.style.overflow = "unset";
     }
-   
+
 })
 let headerMenu = document.getElementById('c-header__menu')
 let listMenuLi = document.querySelectorAll('.c-header__menuLi');
-for(let li of listMenuLi){
-    li.addEventListener('click',function(){
+for (let li of listMenuLi) {
+    li.addEventListener('click', function () {
         headerMenu.style.display = 'none';
-        navbarBtn.src = '/assets/img/header/bar.svg' 
-    navbarBtn.classList.remove('is-active')
-     document.body.style.overflow = "unset";
+        navbarBtn.src = '/assets/img/header/bar.svg'
+        navbarBtn.classList.remove('is-active')
+        document.body.style.overflow = "unset";
     })
 }
 
@@ -162,32 +154,114 @@ for(let li of listMenuLi){
 
 let section = document.querySelectorAll("section");
 let listsLink = document.querySelectorAll(".c-nav__item");
+
 listsLink[0].classList.add("is-active");
 window.onscroll = function () {
- 
+    section.forEach((sec) => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop;
 
-  section.forEach((sec) => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute("id");
 
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute("id");
+        if (top >= offset - 100 && top <= offset + height) {
+            listsLink.forEach((item) => {
+                item.classList.remove("is-active");
 
-    if (top >= offset -1000  && top <= offset + height) {
-      listsLink.forEach((item) => {
-        item.classList.remove("is-active");
-
-        if (item.querySelector("a").getAttribute("href").trim() == "#" + id) {
-          item.classList.add("is-active");
+                if (item.querySelector("a").getAttribute("href").trim() == "#" + id) {
+                    item.classList.add("is-active");
+                }
+            });
         }
-      });
-    }
-  
-  });
+
+    });
 };
 
 
-let listSection = document.querySelectorAll('section');
-for(let sec of listSection){
-    sec.scroll(0,1000)
+
+for (let link of listsLink) {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        let hrefA = this.querySelector('a').getAttribute('href');
+
+        let offsetTopSec = 0;
+        for (let sec of section) {
+            if ("#" + sec.getAttribute('id') == hrefA) {
+                offsetTopSec = sec.offsetTop;
+            }
+        }
+        if (offsetTopSec > 0) {
+            window.scrollTo({
+                top: offsetTopSec - 80,
+                left: 0,
+                behavior: 'smooth'
+            })
+        }
+
+    })
 }
+for (let link of listMenuLi) {
+    if (link.classList.contains('c-header--assign')) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            let hrefA = this.getAttribute('href');
+            let offsetTopSec = 0;
+            for (let sec of section) {
+                if ("#" + sec.getAttribute('id') == hrefA) {
+                    offsetTopSec = sec.offsetTop;
+                }
+            }
+            if (offsetTopSec > 0) {
+                window.scrollTo({
+                    top: offsetTopSec - 60,
+                    left: 0,
+                    behavior: 'smooth'
+                })
+            }
+
+        })
+    }else{
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            let hrefA = this.querySelector('a').getAttribute('href');
+            let offsetTopSec = 0;
+            for (let sec of section) {
+                if ("#" + sec.getAttribute('id') == hrefA) {
+                    offsetTopSec = sec.offsetTop;
+                }
+            }
+            if (offsetTopSec > 0) {
+                window.scrollTo({
+                    top: offsetTopSec - 60,
+                    left: 0,
+                    behavior: 'smooth'
+                })
+            }
+
+        })
+    }
+   
+}
+
+
+
+let scrollBtn = document.querySelector('.c-mainvisual__scrollBtn');
+
+scrollBtn.addEventListener('click', function (e) {
+e.preventDefault();
+    let hrefA = this.getAttribute('href');
+
+    let offsetTopSec = 0;
+    for (let sec of section) {
+        if ("#" + sec.getAttribute('id') == hrefA) {
+            offsetTopSec = sec.offsetTop;
+        }
+    }
+    if (offsetTopSec > 0) {
+        window.scrollTo({
+            top: offsetTopSec - 60,
+            left: 0,
+            behavior: 'smooth'
+        })
+    }
+})

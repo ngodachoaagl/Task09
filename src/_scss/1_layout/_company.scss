@@ -23,6 +23,7 @@
         @include tab {
             padding: 0 20px;
             margin: 25px auto 0;
+            max-width: unset;
         }
         @include sp {
             padding: 0 9px;
@@ -155,6 +156,12 @@
             }
         }
     }
+    @include sp {
+        .c-table__span.u-tablet--only {
+            display: none !important;
+        }
+    }
+
 }
 
 

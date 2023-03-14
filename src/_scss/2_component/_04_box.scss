@@ -1,6 +1,8 @@
 .c-box {
     display: flex;
     padding-left: 120px;
+        z-index: 3;
+    position: relative;
     @include tab {
         padding-left: 20px;
     }
@@ -43,7 +45,7 @@
             font-size: 1.8rem;
             color: $cl-gray--1;
             letter-spacing: 0.54px;
-          
+            background-color: $cl-white--1;
         }
     }
 }

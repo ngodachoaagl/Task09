@@ -67,9 +67,8 @@
         }
 
         img {
-            @include tab {
-                width: 100%;
-            }
+            width: 100%;
+           
         }
     }
 
@@ -137,10 +136,22 @@
             }
         }
     }
-
+.c-career__bodybg{
+    position: relative;
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        background-color: #f8f8f8;
+        content: '';
+        height: 100%;
+    }
+}
     .c-career__body {
         margin-top: 74px;
-
+z-index: 3;
+position: relative;
         @include tab {
             margin-top: 0;
         }
@@ -164,7 +175,7 @@
         @include sp {
             width: unset;
 
-            padding: 49px 5px 55px 20px;
+            padding: 31px 5px 55px 20px;
             margin-bottom: 31px;
 
         }
@@ -196,7 +207,7 @@
         }
 
         @include sp {
-            margin-top: 42px;
+            margin-top: 24px;
             padding-left: 10px;
             margin-bottom: 21px;
         }
@@ -354,7 +365,18 @@
             }
         }
     }
-
+.c-career__footerbg{
+    position: relative;
+    &::after{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+      background-color: #fdfbef;
+        content: '';
+        height: 100%;
+    }
+}
     .c-career__footer {
         .c-box__R {
      

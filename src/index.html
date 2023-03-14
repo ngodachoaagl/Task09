@@ -54,12 +54,36 @@
         </div>
       </div>
     </section>
-    <section class="c-about l-container" id="about">
-      <div class="c-about--main c-scrollBox l-container">
+    <section class="c-about c-scrollBox" id="about">
+      <div class="c-about--main l-container">
         <div class="c-about--L">
           <div class="c-about--Lexbox">
             <h2 class="c-title1">私たちについて</h2>
-            <p class="c-about__desc">
+            <p class="c-about__descs">
+              <span class="c-about__desc">
+                多能工と呼ばれるプロの職人集団が、外構工事（家の外回りの工事）を中心に事業を展開する会社です。<br>
+                多能工とは、様々な建設作業が出来る職人の事を意味します。
+              </span>
+              <br>
+              <span class="c-about__desc">
+                当社の職人は、重機作業、鉄筋作業、型枠作業、左官作業、電気工事、金物取付作業、土木作業植栽作業、設備作業の全てを1人で行ないます。
+              </span>
+              <br>
+              <span class="c-about__desc">
+                体力仕事も少なからず存在しますが、ベトナム人研修生や最新の道具が手助けしますので、昔よりも作業内容は簡略化されています。<br>
+                当社では今後も最新設備を取り入れ、作業負担の軽減化を進めていく予定です。
+              </span>
+              <br>
+              <span class="c-about__desc">
+                また、最新道具が発展した現在でも多能工職人になることは難しいのですが、
+                当社は関西の中でもとくに職人の在籍率が高い会社でもあります。
+              </span>
+              <br>
+              <span class="c-about__desc">
+                今では解体工事、リフォーム工事、新築工事なども施工する会社となり、より深く様々な作業を身に付ける事ができる未来発展型の会社です。
+              </span>
+            </p>
+            <!-- <p class="c-about__desc">
               多能工と呼ばれるプロの職人集団が、外構工事（家の外回りの工事）を中心に事業を展開する会社です。<br>
               多能工とは、様々な建設作業が出来る職人の事を意味します。
             </p>
@@ -76,7 +100,7 @@
             </p>
             <p class="c-about__desc">
               今では解体工事、リフォーム工事、新築工事なども施工する会社となり、より深く様々な作業を身に付ける事ができる未来発展型の会社です。
-            </p>
+            </p> -->
           </div>
         </div>
         <div class="c-about--R">
@@ -103,8 +127,8 @@
         </div>
       </div>
     </section>
-    <section class="c-work" id="work">
-      <div class="c-work--main c-scrollBox">
+    <section class="c-work  c-scrollBox " id="work">
+      <div class="c-work--main ">
         <div class="c-work__header">
           <h2 class="c-title1">私たちの仕事</h2>
           <p class="c-cap">
@@ -112,7 +136,9 @@
             仕事をしていく上で、「あなたの興味のあること」<br class="u-tablet--hidden">「向いていること」が見つけられるかもしれません。
           </p>
         </div>
+        <div class="c-work--body">
         <div class="c-box l-container">
+
           <div class="c-box__L">
             <% if(typeof work !='undefined' ){%>
               <% work.img.forEach(item=>{%>
@@ -127,7 +153,7 @@
           </div>
           <div class="c-box__R">
             <div class="c-box__Rheader">
-              <h3 class="c-title1">仕事内容の紹介</h3>
+              <h2 class="c-title1">仕事内容の紹介</h2>
               <p class="c-cap">屋外での現場作業をメインに行ないます。</p>
             </div>
             <div class="c-box__Rbody">
@@ -146,10 +172,11 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </section>
-    <section class="c-album">
-      <div class="c-album--main c-scrollBox">
+    <section class="c-album c-scrollBox">
+      <div class="c-album--main ">
         <div class="c-album__header">
           <h2 class="c-title1">Photos & Movie</h2>
           <p class="c-cap">
@@ -158,7 +185,7 @@
         </div>
         <div class="c-album__body">
           <div class="c-album__video">
-            <video src="/assets/img/video1.mp4" autoplay></video>
+            <video src="/assets/img/video1.mp4" autoplay loop></video>
           </div>
           <div class="c-album__imgs">
             <% if(typeof album !='undefined' ){%>
@@ -192,8 +219,8 @@
         </div>
       </div>
     </section>
-    <section class="c-career" id="career">
-      <div class="c-career--main c-scrollBox l-container">
+    <section class="c-career c-scrollBox" id="career">
+      <div class="c-career--main ">
         <div class="c-career__header">
           <h2 class="c-title1">
             もうすぐ創業50年、<br>
@@ -231,7 +258,7 @@
             <img src="/assets/img/career/banner.png" alt="もうすぐ創業50年、 あなたのキャリアプランもしっかり考えています。">
           </picture>
           <div class="c-career__bannerText">
-            <h3 class="c-title1">人材育成に最大限の力を注ぎます！</h3>
+            <h2 class="c-title1">人材育成に最大限の力を注ぎます！</h2>
             <p class="c-cap">
               【入社後の研修制度について】<br>
               入社後は、専属の先輩社員と共に現場で簡易な作業から仕事を開始してもらいます。<br>
@@ -240,16 +267,17 @@
             </p>
           </div>
         </div>
-        <div class="c-career__body">
+        <div class="c-career__bodybg">
+        <div class="c-career__body l-container">
           <div class="c-career__bodyT">
-            <h3 class="c-title1 ">入社後のキャリアプラン</h3>
+            <h2 class="c-title1 ">入社後のキャリアプラン</h2>
             <div class="c-career__histories">
               <% if(typeof histories !='undefined' ){ %>
                 <% histories.main.forEach(item=>{%>
                   <div class="c-career__hist">
-                    <h5 class="c-career__histTitle">
+                    <h3 class="c-career__histTitle">
                       <%= item.histTitle %>
-                    </h5>
+                    </h3>
                     <div class="c-career__histBox">
                       <p class="c-career__histDesc"><%- item.histDesc %></p>
                     </div>
@@ -259,17 +287,19 @@
             </div>
             <div class="c-career__bodyB">
               <span class="c-decorLeft"></span>
-              <h4 class="c-title u-clOrange u-fs25 u-tablet--display">
+              <h3 class="c-title u-clOrange u-fs25 u-tablet--display">
                 あなたは、どんな未来に向けて<br>
                 どんなキャリアで仕事をしたいですか？
-              </h4>
-              <h4 class="c-title u-clOrange u-fs25 u-tablet--hidden">
+              </h3>
+              <h3 class="c-title u-clOrange u-fs25 u-tablet--hidden">
                 あなたは、<br>どんな未来に向けてどんなキャリアで仕事をしたいですか？
-              </h4>
+              </h3>
               <span class="c-decorRight"></span>
             </div>
           </div>
         </div>
+        </div>
+        <div class="c-career__footerbg">
         <div class="c-career__footer">
           <div class="c-box l-container">
             <div class="c-box__L">
@@ -287,7 +317,7 @@
             <div class="c-box__R">
               <div class="c-career__svcdesc">
                 <div class="c-career__servicetop">
-                  <h5 class="c-career__svcTitleT">充実した福利厚生サービス</h5>
+                  <h3 class="c-career__svcTitleT">充実した福利厚生サービス</h3>
                   <ul>
                     <li class="c-career__dt1 c-career__svcdescit">
                       <span class="c-career__dot">●</span>遠方から弊社に入社される人は、ENTEX本社の上に社宅(社員<br class="is-pc">&#160;寮)があります。
@@ -342,9 +372,9 @@
                   </ul>
                 </div>
                 <div class="c-career__servicebottom">
-                  <h5 class="c-career__svcTitleB">
+                  <h3 class="c-career__svcTitleB">
                     独立支援制度も充実!<br class="is-tabnsp">20代でも独立可能
-                  </h5>
+                  </h3>
                   <dl>
                     <dt><span class="c-career__dot">●</span>独立支援制度</dt>
                     <dd class="c-career__ddnodot">資格取得費用の援助</dd>
@@ -361,10 +391,11 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </section>
-    <section class="c-interview" id="interview">
-      <div class="c-interview--main c-scrollBox">
+    <section class="c-interview  c-scrollBox" id="interview">
+      <div class="c-interview--main">
         <h2 class="c-title1 u-fs44 u-clBlue">先輩社員からのメッセージ</h2>
         <p class="c-cap">
           未経験で入社した多くのメンバーが<br class="u-tablet--hidden">活躍しています。<br>
@@ -383,7 +414,10 @@
                   </picture>
 
                   <p class="c-flexbox__desc u-clBlue">
-                    <%= item.desc %>
+                   <span class="u-tablet--display"> <%= item.desc %></span>
+                    <span class="u-tablet--hidden">
+                      <%- item.descSP %>
+                    </span>
                   </p>
                   <div class="c-flexbox__banner">
                     <div class="c-flexbox__bannerMain">
@@ -392,22 +426,26 @@
                       </div>
                       <div class="c-flexbox__bannerText">
                         <p class="c-flexbox__bannerName u-pc--only">
+                          <span>
                           <%= item.name %>
+                          </span>
                         </p>
                         <p class="c-flexbox__bannerName u-tablet--only">
+                          <span>
                           <%= item.nameTab %>
+                                      </span>
                         </p>
                         <p class="c-flexbox__bannerName u-sp--only">
-                          <%= item.name %>
+                                 <span>  <%= item.name %></span> 
                         </p>
                         <p class="c-flexbox__bannerDesc u-pc--only">
-                          <%= item.bannerDesc %>
+                                 <span>  <%= item.bannerDesc %></span> 
                         </p>
                         <p class="c-flexbox__bannerDesc u-tablet--only">
-                          <%= item.bannerDescTab %>
+                                 <span>  <%= item.bannerDescTab %></span> 
                         </p>
                         <p class="c-flexbox__bannerDesc u-sp--only">
-                          <%= item.bannerDesc %>
+                                 <span>  <%= item.bannerDesc %></span> 
                         </p>
 
                       </div>
@@ -424,7 +462,7 @@
                   <% }%>
           </div>
         </div>
-        <div class="c-interview--body l-container">
+        <div class="c-interview--body ">
           <div class="c-interview__exBox">
             <h3 class="c-title1  u-tablet--display">代表メッセージ</h3>
             <h3 class="c-title1 u-tablet--hidden">代表者メッセージ</h3>
@@ -470,7 +508,7 @@
               株式会社エンテックス　<br>代表取締役社長　遠藤 剛
             </h5>
             <div class="c-interview--bodyF">
-              <p class="c-interview__company">社名の由来</p>
+              <h3 class="c-interview__company">社名の由来</h3>
               <div class="c-interview--footer">
                 <div class="c-interview__logo">
                   <picture>
@@ -574,8 +612,8 @@
         </div>
       </div>
     </section>
-    <section class="c-recruit" id="recruit">
-      <div class="c-recruit--main c-scrollBox">
+    <section class="c-recruit  c-scrollBox" id="recruit">
+      <div class="c-recruit--main">
         <h2 class="c-title1 u-fs44 u-clBlue">採用情報</h2>
         <p class="c-cap">
           株式会社エンテックスでは、<br class="u-tablet--hidden">下記の人材を募集しています。
@@ -760,8 +798,8 @@
         </div>
       </div>
     </section>
-    <section class="c-company" id="company">
-      <div class="c-company--main c-scrollBox l-container">
+    <section class="c-company  c-scrollBox" id="company">
+      <div class="c-company--main l-container">
         <h2 class="c-title1 u-fs44 u-clBlue">会社情報</h2>
         <div class="c-company--body">
           <table>
